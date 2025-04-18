@@ -1,0 +1,86 @@
+\ProvidesFile{biblatex.cfg}
+% This file is part of proScientia.ltx
+% (c) 2022 Karsten Reincke (https://github.com/kreincke/proScientia.ltx)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+
+\ExecuteBibliographyOptions{
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % configurations offered by biblatex itself
+  % ------------------------------------------
+  maxnames=5,  % Truncate author list after 5 authors ...
+  minnames=3,  % ... But display at least 3 authors
+  autocite=inline,
+  hyperref=true,  % Use hyperref package (should be automatically detected, though)
+  backref=true,  % Back references from bibliography page to each encounter
+  backrefstyle=two,  % Combine back refs if on two consecutive pages
+  isbn=true,  % (Dont) print ISBN, ISSN numbers
+  autolang=hyphen,
+  % track 'reused' csquotes
+  citetracker=constrict, %
+  loccittracker=constrict, % discriminate different pages (a.a.O) versues same page (ebda)
+  opcittracker=constrict,
+  idemtracker=constrict,
+  ibidtracker=constrict,
+  pagetracker=true,
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % configurations offered by authortitle-dw
+  % ------------------------------------------
+  annotation =true,
+  namefont=normal,
+  firstnamefont=normal,
+  idemfont=italic,
+  ibidemfont=italic,
+  idembib=true, % cluster the books of the same author in bib
+  idembibformat=idem, % indicate the same author by ders/dies.
+  editorstring=brackets, % parens=(Hrsg.) | brackets=[Hrsg.] | normal = , Hrsg.
+  nopublisher=false, % insert publisher into bib data
+  editionstring=true, % allow strings in the edition field
+  % ZNAME VOL (YEAR) Nr. YOURNALNUMBER
+  journalnumber=afteryear, %
+  %journumstring=h.
+  series=afteryear,
+  seriesformat=parens,
+  addyear=true, %insert year after titel in 'shorttitle' hints => no year in shorttitle
+  firstfull=true, % frist quote complete
+  edstringincitations=false, %editor and translator only in the first
+  citepages=separate, % vollzitat erst mit seiten, dann 'hier: S. 12'
+}
+% Put your definitions here.
+
+% refine seriesformat by adding a prefix inside of the parens
+\renewcommand*{\seriespunct}{=\addspace}
+
+% by default Biblatex-dw uses Autor1/Autor2 in cites
+% these redefinitions overwrite that behaviour by
+% duplicating the style used for the bibliography
+% (S. p. 35 in the German biblatex-dw handbook )
+\renewcommand*{\citemultinamedelim}{\addcomma\space}
+\renewcommand*{\citefinalnamedelim}{%
+\ifnum\value{liststop}>2 \finalandcomma\fi
+\addspace\bibstring{and}\space}%
+\renewcommand*{\citerevsdnamedelim}{\addspace}
+
+% biblatex-dw does not print 'ders.' / 'dies.' in a row of cites quoting
+% the same book. Additionally, it does not know the diffrence between the
+% same page of of the same work and a different page of the same work
+% quoted before.
+%
+% As soon as biblatex 3.15 is offered by UBUNTU
+% use \bibncpstring[\mkibid]{ibidem} instaed of inserting the
+% German string literally as this hack does:
+\renewbibmacro*{cite:ibid}{%
+{\ifthenelse{\ifloccit}
+  {\printtext[bibhyperref]{\usebibmacro{cite:idem} \mkibid{ebda}}%
+   \global\booltrue{cbx:loccit}}
+  {\printtext[bibhyperref]{\usebibmacro{cite:idem} \mkibid{a.a.O, }}}
+}
+}%
+\DefineBibliographyStrings{english}{%
+  urlseen = {RDL},
+}
+\DefineBibliographyStrings{german}{%
+  urlseen = {RDL},
+}
+\endinput

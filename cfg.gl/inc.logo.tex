@@ -1,0 +1,28 @@
+% This file is derived from 'proScientia.ltx' and now part of the package
+%
+% "Teaching material for the subject 'Fachinformatik' at German vocational schools"
+%
+% (c) 2024 Hohenahr/Germany: Karsten Reincke
+%
+% All files of the uninstantiated package are distributed under the terms of the 
+% creative commons license CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+%
+% -------------------------------------------------------------------------------
+% License fulfilling statement: This file is derived from the tool 'proScientia.ltx' 
+% (https://github.com/kreincke/proScientia.ltx) that has also been created by 
+% Karsten Reincke and is also distributed under the terms of the CC-BY-4.0 license
+
+\newcommand{\mylogo} % define your logo for beamer 
+{
+  \setlength{\TPHorizModule}{11pt}
+  \setlength{\TPVertModule}{11pt}
+   % textblock{}{x,y}: pos(x) = leftUpperCorner + (x * \TPHorizModule), pos(y) = leftUpperCorner - (y * \TPVertModule)
+  \begin{textblock}{1}(30,0.1)
+   \includegraphics[width=25pt,height=25pt]{img/logo.png}
+  \end{textblock}
+} 
+
+\logo{ \mylogo } % let beamer use your logo
+
+\addtobeamertemplate{footnote}{\hskip -2em}{}
+

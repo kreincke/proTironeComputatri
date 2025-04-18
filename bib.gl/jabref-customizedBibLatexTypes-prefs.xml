@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE map SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<map MAP_XML_VERSION="1.0">
+  <entry key="article" value="jabref-entrytype: article: req[pages;author;title;journaltitle;date;gender] opt[series;volume;number;issn;journalsubtitle]"/>
+  <entry key="book" value="jabref-entrytype: book: req[author;gender;title;location;date] opt[edition;editor;isbn;publisher;volumes;volume;series;number]"/>
+  <entry key="collection" value="jabref-entrytype: collection: req[title;editor;gender;location;date] opt[edition;isbn;publisher;volumes;volume;series;number]"/>
+  <entry key="inbook" value="jabref-entrytype: inbook: req[author;gender;title;pages;crossref] opt[]"/>
+  <entry key="incollection" value="jabref-entrytype: incollection: req[author;gender;title;pages;crossref] opt[]"/>
+  <entry key="inproceedings" value="jabref-entrytype: inproceedings: req[author;gender;title;pages;crossref] opt[]"/>
+  <entry key="misc" value="jabref-entrytype: misc: req[] opt[author;gender;title;editor;organization;location;date;howpublished;pubstate]"/>
+  <entry key="online" value="jabref-entrytype: online: req[url;urldate] opt[author;gender;title;organization;location;date;pubstate]"/>
+  <entry key="proceedings" value="jabref-entrytype: proceedings: req[title;editor;gender;location;date;organization] opt[edition;isbn;publisher;volumes;volume;series;number]"/>
+</map>

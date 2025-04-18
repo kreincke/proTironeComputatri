@@ -1,0 +1,71 @@
+% This file is part of the project 'proTironesComputatroElectronico'. 
+% It is distributed under the terms of the creative commons license 
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+%
+% (c) 2025 Hohenahr/Germany: Karsten Reincke
+%
+% For license fulfillment hints see file /LICENSING.md
+
+\documentclass[]{beamer}
+
+% design beamer:
+% --------------
+%\usetheme{EastLansing}
+\usetheme{Madrid}
+%\usetheme{Boadilla}
+%\usetheme{Berkeley}
+\usecolortheme{spruce}
+
+
+% customize your presentation
+% ---------------------------
+% set paths:
+
+\def\imgGl{../../../img.gl/}
+\def\cfgGl{../../../cfg.gl/}
+\def\imgLf{../../img.lf}
+\def\cfgLf{../../cfg.lf}
+
+% language:
+\usepackage[utf8]{inputenc}
+\usepackage[english,ngerman]{babel}
+\input{\cfgGl/inc.babelhyphenations.tex}
+\usepackage[style=german,autostyle=true,]{csquotes}
+
+% no bibliography data in tpc/zenprese, only hyperrefs
+
+\usepackage{hyperref} % allow to use hypelinks
+\hypersetup{bookmarks=true,breaklinks=true,colorlinks=true,citecolor=blue,draft=false}
+
+% design:
+\usepackage{microtype} % improve the grey value and the line feed handling
+\usepackage[absolute,overlay]{textpos}
+
+\usepackage{multirow,tabularx}
+\usepackage{fontawesome}
+\usepackage{rotating}
+\usepackage[dvipsnames]{xcolor}
+
+\newcommand\tcrotate[1]{\begin{turn}{90}{#1}\end{turn}}
+
+
+\newcommand{\mylogo} % define your logo for beamer 
+{
+  \setlength{\TPHorizModule}{11pt}
+  \setlength{\TPVertModule}{11pt}
+   % textblock{}{x,y}: pos(x) = leftUpperCorner + (x * \TPHorizModule), pos(y) = leftUpperCorner - (y * \TPVertModule)
+  \begin{textblock}{1}(30,0.1)
+   \includegraphics[width=25pt,height=25pt]{\imgGl/logo.png}
+  \end{textblock}
+} 
+
+\logo{ \mylogo } % let beamer use your logo
+\addtobeamertemplate{footnote}{\hskip -2em}{}
+
+%path to the images stored once for all
+
+\begin{document}
+
+\input{../tpc-000000.name/zp.000000/inc-000000-topic}
+
+\end{document}
