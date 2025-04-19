@@ -25,9 +25,9 @@ Das GitHub-Repository *proTiroComputatri* stellt **_freie_ Lehr- und Lernmateria
 Dazu gliedern wir jedes Lernfeld in verschiedene Themen (Subjects = `sbj`) und jedes Thema in verschiedene Aspekte (Topics = `tpc`). Jeder Aspekt soll in 1-2 Doppelstunden vermittelt werden können und hat einen spezifischen Ordner, in dem wir  
 
 * die unmittelbar vorausgehenden/vorausgesetzten Themen bzw. Aspekte auflisten [`predecessors.x.md`],
-* eine [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) anbieten, deren Folien Strukturen und Zusammenhänge optisch verdeutlichen [`zenprese.x`],
+* eine [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) anbieten, deren Folien Strukturen und Zusammenhänge optisch verdeutlichen [`zp.x`],
 * ein dazu passendes 'Ton-Spur'-Dokument anlegen, das Zusammenhänge und Hintergründe verdichtet skizziert [`oraltrack.x.md`]
-* beides - optional - zu einem Dokument für das reine Selbststudium verschriftlichen [`deepdive.x`]
+* beides - optional - zu einem Dokument für das reine Selbststudium verschriftlichen [`dd.x`]
 * entsprechende Übungen, Anleitungen und Lösungen bereitstellen [`exercise.x.md`]
 * einen dafür passenden Ablaufplan hinterlegen [`playbook.x.md`]
 
