@@ -31,7 +31,7 @@ Dazu gliedern wir jedes Lernfeld in verschiedene Themen (Subjects = `sbj`) und j
 * entsprechende Übungen, Anleitungen und Lösungen bereitstellen [`exercise.x.md`]
 * einen dafür passenden Ablaufplan hinterlegen [`playbook.x.md`]
 
-Unsere Vision ist es, dass jede Lehrerin zu jedem Thema oder Aspekt bei der Ausbildung zum Fachinformatiker hier fertig aufbereitete Unterrichtsmaterialien findet, die sie ohne urheberrechtliche Bedenken oder Gebühren verwenden darf. Und wir wollen, dass sich auch die Schüler hier bedienen, weil ihnen hier der von Abschlussprüfungen I und II erwartete Stoff umfänglich aufbereitet wird.
+Unsere Vision ist es, dass jede Lehrerin zu jedem Thema oder Aspekt der Ausbildung zum Fachinformatiker bei uns fertig aufbereitete Unterrichtsmaterialien findet, die sie ohne urheberrechtliche Bedenken oder Gebühren verwenden darf. Und wir wollen, dass sich auch die Schüler hier bedienen, weil ihnen hier der von Abschlussprüfungen I und II erwartete Stoff umfänglich aufbereitet wird.
 
 Wir wissen, dass so ein Ziel nur kooperativ zu erreichen ist. In kleinen Schritten. Deshalb stellen wir die Materialien über ein GitHub-Repository zum Download bereit: Inhaltsdateien unter den Bedingungen der Creative-Commons-Lizenz *CC-BY-4.0*, die anderen unter denen der MIT-Lizenz. Beides zusammen, die GitHub-Methoden und die Lizenzierung, erlaubt es uns, mit Techniken der Open-Source-Softwareentwicklung gemeinsam wirklich freie Unterrichtsmaterialien für die Ausbildung von Fachinformatikerinnen zu entwickeln.
 
