@@ -1,1 +1,0 @@
-This directory contains the LaTeX configuration files for the respective 'Lernfeld'

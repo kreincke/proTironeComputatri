@@ -1,1 +1,0 @@
-This directory contains the drawio, programming and data files for this  'Lernfeld'

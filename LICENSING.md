@@ -13,9 +13,11 @@ As long as not explicitly modified for a specific item
 
 As long as not explicitly modified for a specific item
 
-* you fulfill the **BY** condition of the **CC BY 4.0** by adding the following phrase at a prominent place in your work
+* you fulfill the **BY** condition of the **CC BY 4.0** by adding the following phrase (DE oder EN) at a prominent place in your work
 
-This work is based on files from the project [https://github.com/kreincke/proTiroComputatri](proTiroComputatri). You can find the authors under under [https://github.com/kreincke/proTiroComputatri/Contributors](https://github.com/kreincke/proTiroComputatri/Contributors)
+> This work is based on the Open Source project [https://github.com/kreincke/proTiroComputatri](proTiroComputatri), initiated by Karsten Reincke, Germany/Hohenahr. Additional contributors can be found under [https://github.com/kreincke/proTiroComputatri/Contributors](https://github.com/kreincke/proTiroComputatri/Contributors)
+
+> Diese(r) [Arbeit|Text] basiert auf dem Open-Source-Projekt [https://github.com/kreincke/proTiroComputatri](proTiroComputatri), initiiert v. Karsten Reincke, Hohenahr. Weitere Contributoren listet die Dateo [https://github.com/kreincke/proTiroComputatri/Contributors](https://github.com/kreincke/proTiroComputatri/Contributors) auf.
 
 * you fulfill the **MIT** condition *The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software*, if you add the license to any package / file you distribute that do not only contain content files.
 

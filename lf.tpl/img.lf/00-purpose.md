@@ -1,0 +1,1 @@
+This directory contains all images, used for this specific 'Lernfeld'

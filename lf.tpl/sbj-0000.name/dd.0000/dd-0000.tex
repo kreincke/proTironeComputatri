@@ -1,0 +1,105 @@
+\documentclass[
+  DIV=calc,
+  BCOR=5mm,
+  11pt,
+  headings=small,
+  oneside,
+  abstract=true,
+  toc=bib,
+  english,ngerman]{scrartcl}
+
+%%% (1) general configurations %%%
+% set paths:
+
+\def\imgGl{../../../img.gl/}
+\def\bibGl{../../../bib.gl}
+\def\cfgGl{../../../cfg.gl/}
+\def\imgLf{../../img.lf}
+\def\cfgLf{../../cfg.lf}
+\def\bibLf{../../bib.lf}
+
+\usepackage[utf8]{inputenc}
+\usepackage{a4}
+\usepackage[english,ngerman]{babel}
+
+\usepackage[
+  backend=biber,
+  style=authortitle-dw,
+  sortlocale=auto,
+]{biblatex}
+\input{\cfgGl/inc.cfg-biber-de.tex}
+
+\addbibresource{\bibLf/lit.lf00.bib}
+
+% package for improving the grey value and the line feed handling
+\usepackage{microtype}
+
+%language specific quoting signs
+\usepackage[
+  style=german,
+  autostyle=true,
+]{csquotes}
+
+% language specific hyphenation
+\input{\cfgGl/inc.babelhyphenations.tex}
+
+%%% (3) layout page configuration %%%
+
+% select the visible parts of a page
+% S.31: { plain|empty|headings|myheadings }
+\pagestyle{headings}
+% select the wished style of page-numbering
+% S.32: { arabic,roman,Roman,alph,Alph }
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% select the wished distances using the general setlength order:
+% S.34 { baselineskip| parskip | parindent }
+% - general no indent for paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.2ex plus 0.2ex minus 0.2ex}
+
+
+%- start(footnote-configuration)
+
+\deffootnote[1.5em]{1.5em}{1.5em}{\textsuperscript{\thefootnotemark)\ }}
+
+%for using label as nameref
+\usepackage{nameref}
+
+%integrate nomenclature
+\input{\cfgGl/inc.cfg-ncl-de.tex}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{bookmarks=true,breaklinks=true,colorlinks=true,citecolor=blue,draft=false}
+
+\usepackage{multirow,tabularx}
+\usepackage{fontawesome}
+\usepackage{rotating}
+\usepackage[dvipsnames]{xcolor}
+
+\begin{document}
+
+%% use all entries of the bliography
+\nocite{*}
+
+\titlehead{Ausbildung zur Fachinformatikerin}
+\subject{Release \input{\cfgLf/inc.rel.tex}}
+\title{Thema}
+
+\subtitle{Deepdive zu seinen Aspekten}
+\author{Karsten Reincke\input{\cfgGl/inc.lfn.tex}}
+
+\maketitle
+
+
+\section{Thema}
+
+\input{../tpc-000000.name/dd.000000/inc-000000-dd-topic.tex}
+
+\input{\bibGl/ncl.abbrevs-de.tex}
+\input{\bibGl/ncl.journals.tex}
+\printnomenclature
+
+\end{document}
