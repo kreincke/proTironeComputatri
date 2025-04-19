@@ -16,7 +16,7 @@
 <!-- LTeX:Language=de-DE -->
 ## Manifest
 
-Das GitHub-Repository *proTiroComputatri* stellt **_freie_ Lehr- und Lernmaterialien für die Ausbildung zur Fachinformatikerin**[^1] bereit. Gemeint sind Creative-Commons-lizenzierte Dokumente oder Open-Source-Software enthalten, die
+Das GitHub-Repository *proTiroComputatri* stellt **_freie_ Lehr- und Lernmaterialien für die Ausbildung zur Fachinformatikerin**[^1] bereit. Es enthält Creative-Commons-lizenzierte Dokumente oder Open-Source-Software, die
 
 * inhaltlich dem Rahmenlehrplan und den Prüfungskatalogen entsprechen,
 * strukturell der Ordnung der Lernfelder folgen und 
