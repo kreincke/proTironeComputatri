@@ -45,24 +45,24 @@
 
 \newcommand\tcrotate[1]{\begin{turn}{90}{#1}\end{turn}}
 
-
-\newcommand{\mylogo} % define your logo for beamer 
-{
-  \setlength{\TPHorizModule}{11pt}
-  \setlength{\TPVertModule}{11pt}
-   % textblock{}{x,y}: pos(x) = leftUpperCorner + (x * \TPHorizModule), pos(y) = leftUpperCorner - (y * \TPVertModule)
-  \begin{textblock}{1}(30,0.1)
-   \includegraphics[width=25pt,height=25pt]{\imgGl/logo.png}
-  \end{textblock}
-} 
-
+\input{\cfgGl/inc.logo}
 \logo{ \mylogo } % let beamer use your logo
-\addtobeamertemplate{footnote}{\hskip -2em}{}
 
-%path to the images stored once for all
+% title frame
+\title{LF00 / Thema 00 / Aspekt 00}
+\subtitle{Check-Frame\input{\cfgGl/inc.lfn-zp}}
+\institute{GS-LDK}
+\author{Karsten Reincke}
+\date{\today}
 
 \begin{document}
 
+\begin{frame}
+  \titlepage
+\end{frame}
+
 \input{inc-000000-topic}
+
+\input{\cfgGl/inc.cls-zp}
 
 \end{document}

@@ -4,6 +4,7 @@
 % It is distributed under the terms of the creative commons license
 % CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 -->
+<!-- LTeX:Language=de-DE -->
 
 # Licensing Rules
 
@@ -22,9 +23,11 @@ As long as not explicitly modified for a specific item
 
 * you fulfill the **BY** condition of the **CC BY 4.0** by adding the following phrase (DE oder EN) at a prominent place in your work
 
-> This work is based on the Open Source project [https://github.com/kreincke/proTiroComputatri](proTiroComputatri), initiated by Karsten Reincke, Germany/Hohenahr. Additional contributors can be found under [https://github.com/kreincke/proTiroComputatri/Contributors](https://github.com/kreincke/proTiroComputatri/Contributors)
+<!-- LTeX:Language=en-US -->
+> This work is based on the Open Source project [proTiroComputatri](https://github.com/kreincke/proTiroComputatri), initiated by Karsten Reincke, Germany/Hohenahr and distributed under the terms of the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) resp. the [MIT](https://github.com/kreincke/proTiroComputatri/LICENSE.MIT.md) license. Additional contributors can be found under [https://github.com/kreincke/proTiroComputatri/Contributors](https://github.com/kreincke/proTiroComputatri/Contributors)
 
-> Diese(r) [Arbeit|Text] basiert auf dem Open-Source-Projekt [https://github.com/kreincke/proTiroComputatri](proTiroComputatri), initiiert v. Karsten Reincke, Hohenahr. Weitere Contributoren listet die Dateo [https://github.com/kreincke/proTiroComputatri/Contributors](https://github.com/kreincke/proTiroComputatri/Contributors) auf.
+<!-- LTeX:Language=de-DE -->
+> Diese(r) [Arbeit|Text] basiert auf dem Open-Source-Projekt [proTiroComputatri](https://github.com/kreincke/proTiroComputatri), initiiert v. Karsten Reincke, Hohenahr und lizenziert unter der [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/)- resp. der [MIT](https://github.com/kreincke/proTiroComputatri/LICENSE.MIT.md)-Lizenz. Weitere Contributoren listet die Datei [https://github.com/kreincke/proTiroComputatri/Contributors](https://github.com/kreincke/proTiroComputatri/Contributors) auf.
 
 * you fulfill the **MIT** condition *The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software*, if you add the license to any package / file you distribute that do not only contain content files.
 
