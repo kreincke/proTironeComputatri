@@ -8,15 +8,19 @@
 
 <!-- LTeX:Language=de-DE -->
 
+<div style="display: flex;justify-content: center">
+<a href="https://github.com/kreincke/proTiroComputatri/"><img src="./img.gl/logo-protirocomputatri.png" height="180"></a>
+</div>
+
+
 # Freie Unterrichtsmaterialien für die Ausbildung von Fachinformatikerinnen
 
 <!-- LTeX:Language=en-US -->
-<a href="./img.gl/lo.png"><img src="./img.gl/logo-protirocomputatri.png" height="180" style="float:left;margin-right:16px"></a>
 
-*In Germany, there is a second way to become a computer scientist besides studying computer science: you can get an in-company training as an IT specialist, supplemented by vocational school instruction. At the end, you are certificated by the Chamber of Industry and Commerce (IHK). This repository offers teaching materials in accordance to the official German framework curriculum. The language of instruction is German. Thus, also this repository mostly uses the German language.*
+
+> *In Germany, there is a second way to become a computer scientist besides studying computer science: you can get an in-company training as an IT specialist, supplemented by vocational school instruction. At the end, you are certificated by the Chamber of Industry and Commerce (IHK). This repository offers teaching materials in accordance to the official German framework curriculum. The language of instruction is German. Thus, also this repository mostly uses the German language.*
 
 <!-- LTeX:Language=de-DE -->
-<br />
 
 ## Manifest
 
