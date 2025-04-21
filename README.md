@@ -51,7 +51,7 @@ Wäre es nicht schön, wenn die zukünftigen Informatikerinnen gleich anhand von
 
 ## FAQ
 
-* TODO erläutere, warum der lateinische Name? [computatrum = Rechenmaschine/Computer](https://www.latin-is-simple.com/de/vocabulary/noun/6131/) + [tiro = Lehrling](https://de.pons.com/übersetzung-2/latein-deutsch/tiro)
+* TODO erläutere, warum der lateinische Name? [computatrum = Rechenmaschine/Computer](https://www.latin-is-simple.com/de/vocabulary/noun/6131/) + [tiro = Lehrling](https://de.pons.com/übersetzung-2/latein-deutsch/tiro) + [pro needs ablativ 'tirone'](https://de.wikibooks.org/wiki/Latein/_Grammatik/_Satzlehre/_Präpositionen/_Präpositionen_mit_Ablativ)
 * TODO erläutere Lizenzierung und Lizenzerfüllung
 * TODO erläutere und ermögliche das Customizen der Dokumente
 * TODO erläutere und ermögliche einen build-Zweig ein
