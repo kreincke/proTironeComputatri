@@ -1,7 +1,7 @@
 
 <!--
-% This file is part of the Open Source project 'proTiroComputatri'
-% (c) 2025 Karsten Reincke (https://github.com/kreincke/proTiroComputatri)
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/kreincke/proTironeComputatri)
 % It is distributed under the terms of the creative commons license
 % CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 -->
@@ -9,7 +9,7 @@
 <!-- LTeX:Language=de-DE -->
 
 <div style="display: flex;justify-content: center">
-<a href="https://github.com/kreincke/proTiroComputatri/"><img src="./img.gl/logo-protirocomputatri.png" height="180"></a>
+<a href="https://github.com/kreincke/proTironeComputatri/"><img src="./img.gl/logo-protirocomputatri.png" height="180"></a>
 </div>
 
 
@@ -24,7 +24,7 @@
 
 ## Manifest
 
-Das GitHub-Repository *proTiroComputatri* stellt **_freie_ Lehr- und Lernmaterialien für die Ausbildung zur Fachinformatikerin**[^1] bereit. Es enthält Creative-Commons-lizenzierte Dokumente oder Open-Source-Software, die
+Das GitHub-Repository *proTironeComputatri* stellt **_freie_ Lehr- und Lernmaterialien für die Ausbildung zur Fachinformatikerin**[^1] bereit. Es enthält Creative-Commons-lizenzierte Dokumente oder Open-Source-Software, die
 
 * inhaltlich dem Rahmenlehrplan und den Prüfungskatalogen entsprechen,
 * strukturell der Ordnung der Lernfelder folgen und 
