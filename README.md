@@ -45,6 +45,13 @@ Wir wissen, dass so ein Ziel nur kooperativ zu erreichen ist. In kleinen Schritt
 
 Beide zusammen -- die GitHub-Methoden und die Lizenzierung -- erlauben es uns, mit Techniken der Open-Source-Softwareentwicklung gemeinsam wirklich freie Unterrichtsmaterialien für die Ausbildung von Fachinformatikerinnen zu entwickeln. Ganz nach dem Prinzip **Start early. Release often**. Wenn Sie mitwirken wollen, sind Sie als Contributor herzlich willkommen! Wir freuen uns auf jeden Pullrequest!!
 
+## Zeitlicher Ausblick
+
+* [ ] Bis Ende Mai 2025 Aufbau des Template- und Buildsystems
+* [ ] Bis Ende der Hessischen Sommerferien 2025 Integration der LF09-Stunden
+* [ ] Im Laufe des Schuljahrs 2025/2026 stückweise Integration von LF-11c- und LF-11d-Stunden
+* [ ] ???
+
 ## Hintergrund
 
 In Deutschland gibt es neben dem Studium der Informatik die Ausbildung zur Fachinformatikerin.[^1] Ersteres schließt mit dem Bachelor oder Master ab, letztere mit dem Gesellenbrief. Denn die Ausbildung zur Fachinformatikerin ist Teil des deutschen dualen Ausbildungssystems: die 'Azubis' - die *Tirones* - werden im Betrieb und in der Berufsschule ausgebildet. Und für die Ausbildung in der Berufsschule braucht es - neben Lehrerinnen und einem Rahmenlehrplan - ein Curriculum und entsprechende Lehrmaterialien.
