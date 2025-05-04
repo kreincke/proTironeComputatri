@@ -18,10 +18,10 @@
 % ---------------------------
 % set paths:
 
-\def\imgGl{../../../img.gl/}
-\def\cfgGl{../../../cfg.gl/}
-\def\imgLf{../../img.lf}
-\def\cfgLf{../../cfg.lf}
+\def\imgGl{../../../../img.gl/}
+\def\cfgGl{../../../../cfg.gl/}
+\def\imgLf{../../../img.lf}
+\def\cfgLf{../../../cfg.lf}
 
 % language:
 \usepackage[utf8]{inputenc}
@@ -45,13 +45,12 @@
 
 \newcommand\tcrotate[1]{\begin{turn}{90}{#1}\end{turn}}
 
-% beamer configuration
 \input{\cfgGl/inc.logo}
 \logo{ \mylogo } % let beamer use your logo
 
 % title frame
-\title{LF00/Thema 00}
-\subtitle{für die Ausbildung zur Fachinformatikerin\input{\cfgGl/inc.lfn-zp}}
+\title{LF00 / Thema 00 / Aspekt 00}
+\subtitle{Check-Frame\input{\cfgGl/inc.lfn-zp}}
 \institute{GS-LDK}
 \author{Karsten Reincke}
 \date{\today}
@@ -62,7 +61,7 @@
   \titlepage
 \end{frame}
 
-\input{../tpc-000000.name/zp.000000/inc-000000-topic}
+\input{inc-topic-00}
 
 \input{\cfgGl/inc.cls-zp}
 
