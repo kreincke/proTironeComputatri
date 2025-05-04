@@ -48,8 +48,14 @@ for NUM in $TPCS; do
 ) 
 done
 
-SBJDDRF=sbj-$SBJ.dd.pdf
+SBJDDRF=sbj-$SBJ-dd.pdf
+SBJDDDF=sbj-$SBJ-deepdive.pdf
 if [ -d dd ]; then (cd dd && make $SBJDDRF && mv $SBJDDRF ..); fi
-mv $SBJDDRF $DTD/$SBJDDRF
+mv $SBJDDRF $RDD/$SBJDDDF
+
+SBJZPRF=sbj-$SBJ-zp.pdf
+SBJZPDF=sbj-$SBJ-zenprese.pdf
+if [ -d zp ]; then (cd zp && make $SBJZPRF && mv $SBJZPRF ..); fi
+mv $SBJZPRF $RDD/$SBJZPDF
 
 tree ../../dist
