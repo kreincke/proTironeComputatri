@@ -2,7 +2,7 @@
 <!--
 % This file is part of the Open Source project 'proTironeComputatri'
 % (c) 2025 Karsten Reincke (https://github.com/kreincke/proTironeComputatri)
-% It is distributed under the terms of the creative commons license
+% It is distributed under the terms of the Creative Commons license
 % CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 -->
 
@@ -41,7 +41,9 @@ Dazu gliedern wir jedes Lernfeld in verschiedene Themen (Subjects = `sbj`) und j
 
 Unsere Vision ist es, dass jede Lehrerin zu jedem Thema oder Aspekt der Ausbildung zum Fachinformatiker bei uns fertig aufbereitete Unterrichtsmaterialien findet, die sie ohne urheberrechtliche Bedenken oder Gebühren verwenden darf. Und wir wollen, dass sich auch die Schüler hier bedienen, weil ihnen hier der von Abschlussprüfungen I und II erwartete Stoff umfänglich aufbereitet wird.
 
-Wir wissen, dass so ein Ziel nur kooperativ zu erreichen ist. In kleinen Schritten. Deshalb stellen wir die Materialien über ein GitHub-Repository zum Download bereit: Inhaltsdateien unter den Bedingungen der Creative-Commons-Lizenz *CC-BY-4.0*, die anderen unter denen der MIT-Lizenz. Beides zusammen, die GitHub-Methoden und die Lizenzierung, erlaubt es uns, mit Techniken der Open-Source-Softwareentwicklung gemeinsam wirklich freie Unterrichtsmaterialien für die Ausbildung von Fachinformatikerinnen zu entwickeln. Sie sind als Contributor herzlich willkommen! Wir freuen uns auf jeden Pullrequest!!
+Wir wissen, dass so ein Ziel nur kooperativ zu erreichen ist. In kleinen Schritten. Deshalb stellen wir die Materialien über ein GitHub-Repository zum Download bereit: Inhaltsdateien unter den Bedingungen der Creative-Commons-Lizenz *CC-BY-4.0*, die anderen unter denen der MIT-Lizenz. 
+
+Beide zusammen -- die GitHub-Methoden und die Lizenzierung -- erlauben es uns, mit Techniken der Open-Source-Softwareentwicklung gemeinsam wirklich freie Unterrichtsmaterialien für die Ausbildung von Fachinformatikerinnen zu entwickeln. Ganz nach dem Prinzip **Start early. Release often**. Wenn Sie mitwirken wollen, sind Sie als Contributor herzlich willkommen! Wir freuen uns auf jeden Pullrequest!!
 
 ## Hintergrund
 
