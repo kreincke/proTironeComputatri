@@ -32,12 +32,12 @@ Das GitHub-Repository *proTironeComputatri* stellt **_freie_ Lehr- und Lernmater
 
 Dazu gliedern wir jedes Lernfeld in verschiedene Themen (Subjects = `sbj`) und jedes Thema in verschiedene Aspekte (Topics = `tpc`). Jeder Aspekt soll in 1-2 Doppelstunden vermittelt werden können und hat einen spezifischen Ordner, in dem wir  
 
-* die unmittelbar vorausgehenden/vorausgesetzten Themen bzw. Aspekte auflisten [`predecessors.x.md`],
-* eine [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) anbieten, deren Folien Strukturen und Zusammenhänge optisch verdeutlichen [`zp.x`],
-* ein dazu passendes 'Ton-Spur'-Dokument anlegen, das Zusammenhänge und Hintergründe verdichtet skizziert [`oraltrack.x.md`]
-* beides - optional - zu einem Dokument für das reine Selbststudium verschriftlichen [`dd.x`]
-* entsprechende Übungen, Anleitungen und Lösungen bereitstellen [`exercise.x.md`]
-* einen dafür passenden Ablaufplan hinterlegen [`playbook.x.md`]
+* die unmittelbar vorausgehenden/vorausgesetzten Themen bzw. Aspekte auflisten [`dependencies-??.json`],
+* eine [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) anbieten, deren Folien Strukturen und Zusammenhänge optisch verdeutlichen [`zp/`],
+* ein dazu passendes 'Ton-Spur'-Dokument anlegen, das Zusammenhänge und Hintergründe verdichtet skizziert [`oraltrack-??.md`]
+* beides - optional - zu einem Dokument für das reine Selbststudium verschriftlichen [`dd/`]
+* entsprechende Übungen, Anleitungen und Lösungen bereitstellen [`exercise-??.md`]
+* einen dafür passenden Ablaufplan hinterlegen [`playbook-??.md`]
 
 Unsere Vision ist es, dass jede Lehrerin zu jedem Thema oder Aspekt der Ausbildung zum Fachinformatiker bei uns fertig aufbereitete Unterrichtsmaterialien findet, die sie ohne urheberrechtliche Bedenken oder Gebühren verwenden darf. Und wir wollen, dass sich auch die Schüler hier bedienen, weil ihnen hier der von Abschlussprüfungen I und II erwartete Stoff umfänglich aufbereitet wird.
 
