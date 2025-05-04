@@ -48,7 +48,8 @@ Beide zusammen -- die GitHub-Methoden und die Lizenzierung -- erlauben es uns, m
 ## Zeitlicher Ausblick
 
 * [ ] Bis Ende Mai 2025 Aufbau des Template- und Buildsystems
-* [ ] Bis Ende der Hessischen Sommerferien 2025 Integration der LF09-Stunden
+* [ ] Bis Ende Juni 2025 Integration einer exemplarischen Unterrichtseinheit in Sachen Markdown
+* [ ] Bis Ende der Hessischen Sommerferien 2025 Integration eines Grundbestandes an LF09-Stunden
 * [ ] Im Laufe des Schuljahrs 2025/2026 stückweise Integration von LF-11c- und LF-11d-Stunden
 * [ ] ???
 
