@@ -35,7 +35,7 @@ Unsere Vision ist es, dass jede Lehrerin hier - zu jedem Thema oder Aspekt der A
 
 Wir wissen, dass so ein Ziel nur kooperativ zu erreichen ist. In kleinen Schritten. Deshalb stellen wir die PDF-Dateien und ihre Quellen in einem GitHub-Repository bereit. Inhaltsdateien sind *CC-BY-4.0* lizenziert, die anderen MIT lizenziert. Beides zusammen, die GitHub-Methodik und die Lizenzierung, erlaubt es uns, mit Techniken der Open-Source-Softwareentwicklung wirklich freie Unterrichtsmaterialien für die Ausbildung von Fachinformatikerinnen zu entwickeln. Und zwar gemeinsam. Als Community.
 
-Sie sind als Contributoriin herzlich willkommen! Wir freuen uns auf jeden Pullrequest!!
+Seien Sie als Contributoriin herzlich willkommen! Wir freuen uns auf jeden Pullrequest!!
 
 ## Struktur
 
