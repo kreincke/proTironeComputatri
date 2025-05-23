@@ -2,7 +2,7 @@
 <!--
 % This file is part of the Open Source project 'proTironeComputatri'
 % (c) 2025 Karsten Reincke (https://github.com/kreincke/proTironeComputatri)
-% It is distributed under the terms of the creative commons license
+% It is distributed under the terms of the Creative Commons license
 % CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 -->
 
@@ -18,7 +18,7 @@
 <!-- LTeX:Language=en-US -->
 
 
-> *In Germany, there is a second way to become a computer scientist besides studying computer science: you can get an in-company training as an IT specialist, supplemented by vocational school instruction. At the end, you are certificated by the Chamber of Industry and Commerce (IHK). This repository offers teaching materials in accordance to the official German framework curriculum. The language of instruction is German. Thus, also this repository mostly uses the German language.*
+> *In Germany, there is a second way to become a computer scientist besides studying computer science: you can get an in-company training as an IT specialist, supplemented by vocational school instruction. Ultimately, you are certified by the Chamber of Industry and Commerce (IHK). This repository offers teaching materials in accordance with the official German framework curriculum. The language of instruction is German. Thus, this repository also uses German as the language of teaching material.*
 
 <!-- LTeX:Language=de-DE -->
 
@@ -65,7 +65,13 @@ Die Nummern der Lernfelder folgen dem Rahmenlehrplan. Mehrere Themen (`sbj-`\*) 
   * fasst die Präsentationen zu einem Aspekt zu einer thematischen [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) zusammen.
   * kann die Aspekt bezogenen Tonspurdateien zu einer übergreifenden thematischen Tonspur-Datei zusammenfassen.
 
+## Zeitlicher Ausblick
 
+* [ ] Bis Ende Mai 2025 Aufbau des Template- und Buildsystems
+* [ ] Bis Ende Juni 2025 Integration einer exemplarischen Unterrichtseinheit in Sachen Markdown
+* [ ] Bis Ende der Hessischen Sommerferien 2025 Integration eines Grundbestandes an LF09-Stunden
+* [ ] Im Laufe des Schuljahrs 2025/2026 stückweise Integration von LF-11c- und LF-11d-Stunden
+* [ ] ???
 
 ## Hintergrund
 
@@ -87,4 +93,4 @@ Wäre es nicht schön, wenn die zukünftigen Informatikerinnen gleich anhand von
 
 Anmerkungen:
 
-[^1]: Wir nutzen das generische Femininum. Dort, wo wir es nicht tun, hätten wir es tun sollen und werden nachbessern. Denn nach mehreren Jahrhunderten, in denen es andersherum lief, werden wir Männer es einige Jahrzehnte aushalten, wenn hier einmal wir mitgemeint sind - und nicht die Frauen.
+[^1]: Wir nutzen das generische Femininum. Dort, wo wir es nicht tun, hätten wir es tun sollen und werden nachbessern. Denn nach mehreren Jahrhunderten, in denen es andersherum lief, werden wir Männer es gut einige Jahrzehnte aushalten, wenn nun wir mitgemeint sind, und nicht mehr die Frauen. Die werden das zumeist (wohl) nicht (offen) fordern. Weil sie ja ein gerechteres System wollen. Aber wir Männer können es ihnen von uns aus geben, ritterlich. Das wäre dann unser Beitrag zu einer respektvolleren Welt und zur Bewahrung einer sprachlichen Eleganz. Denn [Sprache ist, was wir draus machen](https://www.amazon.de/Sprache-ist-was-draus-machst/dp/342644612X/).
