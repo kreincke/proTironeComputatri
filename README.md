@@ -26,22 +26,46 @@
 
 Das GitHub-Repository *proTironeComputatri* stellt **_freie_ Lehr- und Lernmaterialien für die Ausbildung zur Fachinformatikerin**[^1] bereit. Es enthält Creative-Commons-lizenzierte Dokumente oder Open-Source-Software, die
 
-* inhaltlich dem Rahmenlehrplan und den Prüfungskatalogen entsprechen,
-* strukturell der Ordnung der Lernfelder folgen und 
-* (mit der Zeit) eine Reihe fertige Unterrichtseinheiten bieten.  
+* die die Vorgaben des Rahmenlehrplans und der Prüfungskataloge erfüllen,
+* die sich an der Ordnung der Lernfelder ausrichten,
+* die Reihen fertig nutzbarer Unterrichts- und Lernmaterialen bilden,
+* die jedes Thema und jeden Aspekte eines Lernfeldes abdecken.  
 
-Dazu gliedern wir jedes Lernfeld in verschiedene Themen (Subjects = `sbj`) und jedes Thema in verschiedene Aspekte (Topics = `tpc`). Jeder Aspekt soll in 1-2 Doppelstunden vermittelt werden können und hat einen spezifischen Ordner, in dem wir  
+Unsere Vision ist es, dass jede Lehrerin hier zu jedem Thema oder Aspekt der Ausbildung zur Fachinformatikerin fertig aufbereitete Unterrichtsmaterialien findet, die sie gebührenfrei und ohne urheberrechtliche Bedenken verwenden darf und kann. Und wir wollen, dass sich auch die Schüler in dem Wissen hier bedienen, dass ihnen dieses Repository den von den Abschlussprüfungen I und II erwarteten Stoff umfänglich hochwertig aufbereitet.
 
-* die unmittelbar vorausgehenden/vorausgesetzten Themen bzw. Aspekte auflisten [`predecessors.x.md`],
-* eine [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) anbieten, deren Folien Strukturen und Zusammenhänge optisch verdeutlichen [`zp.x`],
-* ein dazu passendes 'Ton-Spur'-Dokument anlegen, das Zusammenhänge und Hintergründe verdichtet skizziert [`oraltrack.x.md`]
-* beides - optional - zu einem Dokument für das reine Selbststudium verschriftlichen [`dd.x`]
-* entsprechende Übungen, Anleitungen und Lösungen bereitstellen [`exercise.x.md`]
-* einen dafür passenden Ablaufplan hinterlegen [`playbook.x.md`]
+Wir wissen, dass so ein Ziel nur kooperativ zu erreichen ist. In kleinen Schritten. Deshalb stellen wir die PDF-Dateien und ihre Quellen in einem GitHub-Repository bereit. Inhaltsdateien sind *CC-BY-4.0* lizenziert, die anderen MIT lizenziert. Beides zusammen, die GitHub-Methodik und die Lizenzierung, erlaubt es uns, mit Techniken der Open-Source-Softwareentwicklung wirklich freie Unterrichtsmaterialien für die Ausbildung von Fachinformatikerinnen zu entwickeln. Und zwar gemeinsam. Als Community.
 
-Unsere Vision ist es, dass jede Lehrerin zu jedem Thema oder Aspekt der Ausbildung zum Fachinformatiker bei uns fertig aufbereitete Unterrichtsmaterialien findet, die sie ohne urheberrechtliche Bedenken oder Gebühren verwenden darf. Und wir wollen, dass sich auch die Schüler hier bedienen, weil ihnen hier der von Abschlussprüfungen I und II erwartete Stoff umfänglich aufbereitet wird.
+Sie sind als Contributoriin herzlich willkommen! Wir freuen uns auf jeden Pullrequest!!
 
-Wir wissen, dass so ein Ziel nur kooperativ zu erreichen ist. In kleinen Schritten. Deshalb stellen wir die Materialien über ein GitHub-Repository zum Download bereit: Inhaltsdateien unter den Bedingungen der Creative-Commons-Lizenz *CC-BY-4.0*, die anderen unter denen der MIT-Lizenz. Beides zusammen, die GitHub-Methoden und die Lizenzierung, erlaubt es uns, mit Techniken der Open-Source-Softwareentwicklung gemeinsam wirklich freie Unterrichtsmaterialien für die Ausbildung von Fachinformatikerinnen zu entwickeln. Sie sind als Contributor herzlich willkommen! Wir freuen uns auf jeden Pullrequest!!
+## Struktur
+
+Das Repository enthält 3 Quellen:
+
+* Im Ordner **releases** befinden sich - nach Lernfeld und Datum sortiert - veröffentlichte versionierte Dokumentsammlungen, jeweils in Form einer Zip-Datei. Diese enthalten ihrerseits die direkt nutzbaren PDFs samt deren Quelldateien: Hier kann man sich **fertige**, auf einander abgestimmte **Unterrichtseinheiten zu/für ein Lernfeld herunterladen.**
+* Im Ordner **results** befinden sich die Unterrichtseinheiten letzter Hand, jeweils als Sammlung von PDF-Dateien, sortiert nach Lernfeld, Thema und Aspekt: Hier kann man sich **fertige**, auf einander abgestimmte **Unterrichtseinheiten zu einem Tema bzw. Aspekt herunterladen.**
+* Im Ordner **sources** finden sich die Quelldateien zu den unter *results* und/oder *releases* herunterladbaren PDF-Dateien.
+  * Im Ordner **sources/doc.etc** befinden sich die MS-Office bzw. Libre-Office-Dateien, ebenfalls sortiert nach Lernfeld, Thema und Aspekt.
+  * Im Ordner **sources/ltx.etc** befinden sich die LaTeX, Markdown und Drawio-Dateien - gegliedert nach Lernfeld, Themen (Subjects = `sbj`) und Aspekte (Topics = `tpc`). Zusammen greifen sie ineinander und bilden eine ganze Entwicklungsumgebung, mit der aus den Quellen automatisiert die resutierenden PDFs kompiliert werden.
+
+Die Nummern der Lernfelder folgen dem Rahmenlehrplan. Mehrere Themen (`sbj-`\*) decken ein Lernfeld ab. Jedes Thema umfasst i.d.R mehrere Aspekte (`tpc-`\*). Jeder Aspekte soll(te) in 1-2 Doppelstunden vermittelt werden können.
+
+### Einzelheiten zu **sources/doc.etc** basierten PDFs
+
+### Einzelheiten zu **sources/ltx.etc** basierten PDFs
+
+* Jeder Aspektordner (`tpc-`\*)
+  * skizziert in seinem Namen, worum es geht
+  * enthält eine Datei `dependencies-[0-9]{2}.json`, die unmittelbar vorausgehenden/vorausgesetzten Themen bzw. Aspekte auflisten,
+  * bietet eine *beamer*-basierte [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) an, deren Folien Strukturen und Zusammenhänge verdeutlichen und/oder Aspekte anteasern [`zp`]. 
+  * ergänzt die *ZEN-Präsentation* durch ein dazu passendes 'Ton-Spur'-Dokument, das Stichwörter zu Zusammenhängen und Hintergründen liefert, die zu den Präsentationsfolien erzählt werden  [`oraltrack.x.md`].
+  * stellt dazu passende Übungen, Anleitungen und Lösungen bereit [`exercise.x.md`]
+  * fasst den Ablauf des Unterrichts zu einem Aspekt / Thema in einem Ablaufplan zusammen [`playbook.x.md`]
+ * offeriert - optional - die LaTeX-Quelle für ein Deepdive-Dokument zum Selbststudium verschriftlichen [`dd`]
+* Jeder Themenordner (`sbj-`\*) 
+  * fasst die Präsentationen zu einem Aspekt zu einer thematischen [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) zusammen.
+  * kann die Aspekt bezogenen Tonspurdateien zu einer übergreifenden thematischen Tonspur-Datei zusammenfassen.
+
+
 
 ## Hintergrund
 
@@ -51,14 +75,16 @@ Wäre es nicht schön, wenn die zukünftigen Informatikerinnen gleich anhand von
 
 ## FAQ
 
-* TODO erläutere, warum der lateinische Name? [computatrum = Rechenmaschine/Computer](https://www.latin-is-simple.com/de/vocabulary/noun/6131/) + [tiro = Lehrling](https://de.pons.com/übersetzung-2/latein-deutsch/tiro) + [pro needs ablativ 'tirone'](https://de.wikibooks.org/wiki/Latein/_Grammatik/_Satzlehre/_Präpositionen/_Präpositionen_mit_Ablativ)
-* TODO erläutere Lizenzierung und Lizenzerfüllung
-* TODO erläutere und ermögliche das Customizen der Dokumente
-* TODO erläutere und ermögliche einen build-Zweig ein
-* TODO erläutere das Generieren der LaTeX/beamer-Zen-Präsentationen
-* TODO erläutere das Generieren der LaTeX/komscript-Deepdive-Dokumente
-* TODO erläutere generisches Femininum
+## Open Issues
+
+*[ ] TODO: erläutere, warum der lateinische Name? [computatrum = Rechenmaschine/Computer](https://www.latin-is-simple.com/de/vocabulary/noun/6131/) + [tiro = Lehrling](https://de.pons.com/übersetzung-2/latein-deutsch/tiro) + [pro needs ablativ 'tirone'](https://de.wikibooks.org/wiki/Latein/_Grammatik/_Satzlehre/_Präpositionen/_Präpositionen_mit_Ablativ)
+*[ ] TODO: erläutere Lizenzierung und Lizenzerfüllung genauer
+*[ ] TODO: erläutere und ermögliche das Customizen der Dokumente
+*[ ] TODO erläutere und ermögliche einen build-Zweig ein
+*[ ] TODO erläutere das Generieren der LaTeX/beamer-Zen-Präsentationen
+*[ ] TODO erläutere das Generieren der LaTeX/komscript-Deepdive-Dokumente
+*[ ] TODO erläutere generisches Femininum
 
 Anmerkungen:
 
-[^1]: Wir nutzen das generische Femininum. Dort, wo wir es nicht tun, hätten wir es tun sollen und werden nachbessern. Denn nach mehreren Jahrhunderten, in denen es andersherum lief, werden wir Männer es einige Jahrzehnte aushalten, wenn wir mitgemeint sind - und nicht die Frauen.
+[^1]: Wir nutzen das generische Femininum. Dort, wo wir es nicht tun, hätten wir es tun sollen und werden nachbessern. Denn nach mehreren Jahrhunderten, in denen es andersherum lief, werden wir Männer es einige Jahrzehnte aushalten, wenn hier einmal wir mitgemeint sind - und nicht die Frauen.
