@@ -55,7 +55,7 @@ TBC.
 
 ### Einzelheiten zu **sources/ltx.etc** basierten PDFs
 
-* Jeder Aspektordner (`tpc-`\*)
+* Jeder Aspektordner (`tpc-*`)
   * skizziert in seinem Namen, worum es geht
   * enthält eine Datei `dependencies-[0-9]{2}.json`, die unmittelbar vorausgehenden/vorausgesetzten Themen bzw. Aspekte auflisten,
   * bietet eine *beamer*-basierte [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) an, deren Folien Strukturen und Zusammenhänge verdeutlichen und/oder Aspekte anteasern [`zp`]. 
@@ -63,7 +63,7 @@ TBC.
   * stellt dazu passende Übungen, Anleitungen und Lösungen bereit [`exercise.x.md`]
   * fasst den Ablauf des Unterrichts zu einem Aspekt / Thema in einem Ablaufplan zusammen [`playbook.x.md`]
  * offeriert - optional - die LaTeX-Quelle für ein Deepdive-Dokument zum Selbststudium verschriftlichen [`dd`]
-* Jeder Themenordner (`sbj-`\*) 
+* Jeder Themenordner (`sbj-*`) 
   * fasst die Präsentationen zu einem Aspekt zu einer thematischen [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) zusammen.
   * kann die Aspekt bezogenen Tonspurdateien zu einer übergreifenden thematischen Tonspur-Datei zusammenfassen.
 
