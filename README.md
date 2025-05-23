@@ -45,7 +45,7 @@ Das Repository enthält 3 Quellen:
 * Im Ordner **results** befinden sich die Unterrichtseinheiten letzter Hand, jeweils als Sammlung von PDF-Dateien, sortiert nach Lernfeld, Thema und Aspekt: Hier kann man sich **fertige**, auf einander abgestimmte **Unterrichtseinheiten zu einem bestimmten Tema bzw. Aspekt herunterladen.**
 * Im Ordner **sources** finden sich die Quelldateien zu den unter *results* und/oder *releases* herunterladbaren PDF-Dateien. Sie dienen denen, die die Materialien an die eigenen Bedürnisse anpassen oder am Repository mitarbeiten wollen.
   * Im Ordner **sources/doc.etc** befinden sich die MS-Office bzw. Libre-Office-Dateien, ebenfalls sortiert nach Lernfeld, Thema und Aspekt.
-  * Im Ordner **sources/ltx.etc** befinden sich die LaTeX, Markdown und Drawio-Dateien - gegliedert nach Lernfeld, Themen (Subjects = `sbj`) und Aspekte (Topics = `tpc`). Zusammen greifen sie ineinander und bilden eine ganze Entwicklungsumgebung, mit der aus den Quellen automatisiert die resutierenden PDFs kompiliert werden.
+  * Im Ordner **sources/ltx.etc** befinden sich die LaTeX, Markdown und Drawio-Dateien - gegliedert nach Lernfeld, Themen (Subjects = `sbj`) und Aspekten (Topics = `tpc`). Zusammen greifen sie ineinander und bilden eine ganze Entwicklungsumgebung, mit der aus den Quellen automatisiert die resutierenden PDFs kompiliert werden.
 
 Die Nummern der Lernfelder folgen dem Rahmenlehrplan. Mehrere Themen (`sbj-`\*) decken ein Lernfeld ab. Jedes Thema umfasst i.d.R mehrere Aspekte (`tpc-`\*). Jeder Aspekte soll(te) in 1-2 Doppelstunden vermittelt werden können.
 
