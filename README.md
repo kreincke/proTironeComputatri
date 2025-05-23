@@ -9,7 +9,7 @@
 <!-- LTeX:Language=de-DE -->
 
 <div style="display: flex;justify-content: center">
-<a href="https://github.com/kreincke/proTironeComputatri/"><img src="logo-protirone.png" height="180"></a>
+<a href="https://github.com/kreincke/proTironeComputatri/"><img src="logo.png" height="180"></a>
 </div>
 
 
