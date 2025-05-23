@@ -73,7 +73,7 @@ TBC.
 * [ ] Bis Ende Juni 2025 Integration einer exemplarischen Unterrichtseinheit in Sachen Markdown
 * [ ] Bis Ende der Hessischen Sommerferien 2025 Integration eines Grundbestandes an LF09-Stunden
 * [ ] Im Laufe des Schuljahrs 2025/2026 stückweise Integration von LF-11c- und LF-11d-Stunden
-* [ ] ???
+* [ ] ...
 
 ## Hintergrund
 
