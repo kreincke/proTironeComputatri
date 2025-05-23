@@ -41,7 +41,7 @@ Seien Sie als Contributorin herzlich willkommen! Wir freuen uns auf jeden Pullre
 
 Das Repository enthält 3 Quellen:
 
-* Im Ordner **releases** befinden sich - nach Lernfeld und Datum sortiert - veröffentlichte versionierte Dokumentsammlungen, jeweils in Form einer Zip-Datei. Diese enthalten ihrerseits die direkt nutzbaren PDFs samt deren Quelldateien: Hier kann man sich **fertige**, auf einander abgestimmte **Unterrichtseinheiten für ein ganzes Lernfeld herunterladen.**
+* Im Ordner **releases** befinden sich - nach Lernfeld und Datum sortiert - veröffentlichte, versionierte Dokumentsammlungen, jeweils in Form einer Zip-Datei. Diese enthalten ihrerseits die direkt nutzbaren PDFs samt deren Quelldateien: Hier kann man sich **fertige**, auf einander abgestimmte **Unterrichtseinheiten für ein ganzes Lernfeld herunterladen.**
 * Im Ordner **results** befinden sich die Unterrichtseinheiten letzter Hand, jeweils als Sammlung von PDF-Dateien, sortiert nach Lernfeld, Thema und Aspekt: Hier kann man sich **fertige**, auf einander abgestimmte **Unterrichtseinheiten zu einem bestimmten Tema bzw. Aspekt herunterladen.**
 * Im Ordner **sources** finden sich die Quelldateien zu den unter *results* und/oder *releases* herunterladbaren PDF-Dateien. Sie dienen denen, die die Materialien an die eigenen Bedürnisse anpassen oder am Repository mitarbeiten wollen.
   * Im Ordner **sources/doc.etc** befinden sich die MS-Office bzw. Libre-Office-Dateien, ebenfalls sortiert nach Lernfeld, Thema und Aspekt.
