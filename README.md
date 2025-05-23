@@ -47,7 +47,7 @@ Das Repository enthält 3 Quellen:
   * Im Ordner **sources/doc.etc** befinden sich die MS-Office bzw. Libre-Office-Dateien, ebenfalls sortiert nach Lernfeld, Thema und Aspekt.
   * Im Ordner **sources/ltx.etc** befinden sich die LaTeX, Markdown und Drawio-Dateien - gegliedert nach Lernfeld, Themen (Subjects = `sbj`) und Aspekten (Topics = `tpc`). Zusammen greifen sie ineinander und bilden eine ganze Entwicklungsumgebung, mit der aus den Quellen automatisiert die resutierenden PDFs kompiliert werden.
 
-Die Nummern der Lernfelder folgen dem Rahmenlehrplan. Mehrere Themen (`sbj-`\*) decken ein Lernfeld ab. Jedes Thema umfasst i.d.R mehrere Aspekte (`tpc-`\*). Jeder Aspekte soll(te) in 1-2 Doppelstunden vermittelt werden können.
+Die Nummern der Lernfelder folgen dem Rahmenlehrplan. Mehrere Themen (`sbj-`\*) decken ein Lernfeld ab. Jedes Thema umfasst i.d.R mehrere Aspekte (`tpc-`\*). Jeder Aspekt soll(te) in 1-2 Doppelstunden vermittelt werden können.
 
 ### Einzelheiten zu **sources/doc.etc** basierten PDFs
 
