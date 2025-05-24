@@ -43,7 +43,7 @@ Sofern im Einzelfall nicht anders vermerkt, stehen alle Dokumente mit Lehrinhalt
 
 Ausgenommen von dieser Regel ist das [proTirone-Logo](https://github.com/kreincke/proTironeComputatri/blob/main/logo.png): Es darf nur verwendet werden, um das Projekt [proTirone](https://github.com/kreincke/proTironeComputatri/) visuell zu markieren bzw. anzuteasern.
 
-Näheres regelt die [Lizenzenzierungsdatei](https://github.com/kreincke/proTironeComputatri/blob/main/LICENSING.md) 
+Näheres regelt unsere [Lizenzenzierungsdatei](https://github.com/kreincke/proTironeComputatri/blob/main/LICENSING.md) 
 
 ## Struktur
 
