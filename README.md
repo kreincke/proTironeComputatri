@@ -37,6 +37,9 @@ Wir wissen, dass so ein Ziel nur kooperativ zu erreichen ist. In kleinen Schritt
 
 Seien Sie als Contributorin herzlich willkommen! Wir freuen uns auf jeden Pullrequest!!
 
+## Lizenz
+
+Sofern im Einzelfall nicht anders vermerkt, stehen alle Dokumente mit Lehrinhalt unter der [CC-BY-4.0 Lizenz](https://creativecommons.org/licenses/by/4.0/deed.de)
 ## Struktur
 
 Das Repository enthält 3 Quellen:
