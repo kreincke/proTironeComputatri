@@ -10,7 +10,9 @@ TOP_DIR=`dirname $BIN_DIR`
 CONTEXT="$1"
 
 IMGMD="img-meta-data.json"; # json file containing all image meta descriptions
-MP=""; # true, if the first image mate description has been written
+MDIFILE="mdi.tmp"
+echo "false"> $MDIFILE; # true, if the first image meta description has been written
+
 
 
 IMAGELIST="imagelist.tmp"
@@ -18,15 +20,15 @@ UNIQUE_IMAGELIST="unique-imagelist.tmp"
 
 # (0) clear environment
 echo "[" > $IMGMD;
-touch $IMAGELIST $UNIQUE_IMAGELIST;
+touch $UNIQUE_IMAGELIST;
+echo "imgGl/logo-protirone.png" > $IMAGELIST
 
 # (1) collect all images + paths embedded into any tex-file
-find . -name "*.tex" | grep "$CONTEXT" | while read f; do
-  echo "?images?: $f";
+find . -name "*.tex" | grep -v "inc-credits.tex" | grep "$CONTEXT" | while read f; do
   # check each line of each found tex file for embedded images
   cat $f | while read l; do
     imageFilePath=`echo $l | grep -v '^\s*%' | grep 'includegraphics' | sed 's/.*{img/img/' | tr -d '}';`
-    if [ ! "$imageFilePath" == "" ]; then echo "$imageFilePath">> $IMAGELIST; fi
+    if [ ! "$imageFilePath" == "" ]; then echo "$imageFilePath" >> $IMAGELIST; fi
   done
 done
 
@@ -43,7 +45,8 @@ cat $UNIQUE_IMAGELIST | while read iml; do
   # try to find if
   find $TOP_DIR -name $imageMeta | while read tfx; do
     # if there are already meta sections, add a comma to the image meta descriptions
-    if [ "$MP" == 'true' ]; then echo "," >> $IMGMD; else MP='true'; fi;
+    MDI=`cat $MDIFILE`
+    if [ "$MDI" == 'true' ]; then echo "," >> $IMGMD; else echo "true" > $MDIFILE; fi;
     # store the path of the image file to the image meta descriptions 
     # for enabling the converter to embed it into the image reference list
     echo "{ \"imPath\": \"$iml\"," >> $IMGMD;
@@ -52,10 +55,11 @@ cat $UNIQUE_IMAGELIST | while read iml; do
     # copy the content into the image meta descriptions
     cat $tfx >> $IMGMD;
     # close this section
-    echo "}" >> $IMGMD    
+    echo "}" >> $IMGMD   
   done
 done
-# close the arry
+
+# close the array
 echo "]" >> $IMGMD;
 
 # (4) delete all temporarily created files
