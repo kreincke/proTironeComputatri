@@ -90,10 +90,13 @@ In Deutschland gibt es neben dem Studium der Informatik die Ausbildung zur Fachi
 Wäre es nicht schön, wenn die zukünftigen Informatikerinnen gleich anhand von Open-Source-(Software) basierten Dokumenten ausgebildet würden?
 
 ## FAQ
+* Warum nutzt Ihr einen lateinischen Projektnamen?
+  * Wann immer wir nach *Fachinformatik* 'gegoogelt' haben, sind uns Dokumente aus dem universitären Kontext angeboten worden. Die Bedeutungen von *Fachinformatik* und *Fach Informatik* liegen einfch zu nahe. Auch die Wörter *Lehrling* oder *Lehrlingsausbildung* führen über *Lehre* und *Bildung* in den universitären Kontext. Nur die Suche nach *__"__ Fachinformatik __"__* schuf Abhilfe. Um unser Vorhaben dennoch explizit in den Kontext der deutschen Lehrlingsausbildung - das deutsche duale Ausbildungssystem - zu setzen und von jedem universitären Anspruch abzugrenzen, haben wir uns für den lateinischen Neologismus [computatrum = Rechenmaschine/Computer](https://www.latin-is-simple.com/de/vocabulary/noun/6131/) in Verbindung mit dem Wort [tiro = Lehrling](https://de.pons.com/übersetzung-2/latein-deutsch/tiro) entschieden. Weil letztes in der Verbindung mit der Präposition *pro* im Ablativ zu nutzen ist, entstand **proTirone computatrum**: *für den Lehrling der Fachinformatik*. 
+* 
 
 ## Open Issues
 
-* [ ] TODO: erläutere, warum der lateinische Name? [computatrum = Rechenmaschine/Computer](https://www.latin-is-simple.com/de/vocabulary/noun/6131/) + [tiro = Lehrling](https://de.pons.com/übersetzung-2/latein-deutsch/tiro) + [pro needs ablativ 'tirone'](https://de.wikibooks.org/wiki/Latein/_Grammatik/_Satzlehre/_Präpositionen/_Präpositionen_mit_Ablativ)
+* [X] TODO: erläutere, warum der lateinische Name? [computatrum = Rechenmaschine/Computer](https://www.latin-is-simple.com/de/vocabulary/noun/6131/) + [tiro = Lehrling](https://de.pons.com/übersetzung-2/latein-deutsch/tiro) + [pro needs ablativ 'tirone'](https://de.wikibooks.org/wiki/Latein/_Grammatik/_Satzlehre/_Präpositionen/_Präpositionen_mit_Ablativ)
 * [X] TODO: erläutere Lizenzierung und Lizenzerfüllung genauer
 * [ ] TODO: erläutere und ermögliche das Customizen der Dokumente
 * [ ] TODO erläutere und ermögliche einen build-Zweig ein
