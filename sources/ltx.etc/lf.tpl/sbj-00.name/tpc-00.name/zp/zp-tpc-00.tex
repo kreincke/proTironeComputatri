@@ -3,6 +3,7 @@
 % It is distributed under the terms of the creative commons license
 % CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 
+
 \documentclass[]{beamer}
 
 % design beamer:
@@ -19,17 +20,30 @@
 % set paths:
 
 \def\imgGl{../../../../img.gl/}
+\def\bibGl{../../../../bib.gl}
 \def\cfgGl{../../../../cfg.gl/}
 \def\imgLf{../../../img.lf}
 \def\cfgLf{../../../cfg.lf}
+\def\bibLf{../../../bib.lf}
 
 % language:
 \usepackage[utf8]{inputenc}
 \usepackage[english,ngerman]{babel}
-\input{\cfgGl/inc.babelhyphenations.tex}
+
+\usepackage[backend=biber,style=authortitle-dw,sortlocale=auto,]{biblatex}
+\input{\cfgGl/inc.cfg-biber-de.tex}
+\ExecuteBibliographyOptions{annotation=false}
+\renewcommand*{\bibfont}{\fontsize{8}{10}\selectfont}
+\addbibresource{\bibLf/lit.lf00.bib}
+
+%\input{\cfgGl/inc.cfg-ncl-de.tex} %integrate nomenclature
+
+\usepackage{nameref} %for using label as nameref
+%language specific quoting signs
 \usepackage[style=german,autostyle=true,]{csquotes}
 
-% no bibliography data in tpc/zenprese, only hyperrefs
+% language specific hyphenation
+\input{\cfgGl/inc.babelhyphenations.tex}
 
 \usepackage{hyperref} % allow to use hypelinks
 \hypersetup{bookmarks=true,breaklinks=true,colorlinks=true,citecolor=blue,draft=false}
@@ -46,7 +60,8 @@
 \newcommand\tcrotate[1]{\begin{turn}{90}{#1}\end{turn}}
 
 \input{\cfgGl/inc.logo}
-\logo{ \mylogo } % let beamer use your logo
+
+\addtobeamertemplate{footnote}{\hskip -2em}{}
 
 % title frame
 \title{LF00 / Thema 00 / Aspekt 00}
@@ -56,6 +71,8 @@
 \date{\today}
 
 \begin{document}
+\nocite{*}
+\selectlanguage{ngerman}
 
 \begin{frame}
   \titlepage
@@ -63,9 +80,26 @@
 
 \input{inc-topic-00}
 
-\input{\cfgGl/inc.cls-zp}
-
 \logo{}
-\input{inc-credits}
+\newpage
+\section{Bildnachweise}
+\noindent\rule{\linewidth}{0.4pt}
+
+\begin{small}Bildnachweise\end{small}
+
+\vspace{0.22cm}
+\begin{tiny}
+ \input{./inc-image-list}
+\end{tiny}
+
+\newpage
+\section{Literaturliste}
+\noindent\rule{\linewidth}{0.4pt}
+
+\begin{small}Literaturliste\end{small}
+
+\vspace{0.22cm}
+\printbibliography
+
 
 \end{document}

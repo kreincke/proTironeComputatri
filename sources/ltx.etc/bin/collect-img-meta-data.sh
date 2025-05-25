@@ -14,7 +14,6 @@ MDIFILE="mdi.tmp"
 echo "false"> $MDIFILE; # true, if the first image meta description has been written
 
 
-
 IMAGELIST="imagelist.tmp"
 UNIQUE_IMAGELIST="unique-imagelist.tmp"
 
@@ -24,7 +23,7 @@ touch $UNIQUE_IMAGELIST;
 echo "imgGl/logo-protirone.png" > $IMAGELIST
 
 # (1) collect all images + paths embedded into any tex-file
-find . -name "*.tex" | grep -v "inc-credits.tex" | grep "$CONTEXT" | while read f; do
+cat texfiles.tmp | grep "$CONTEXT" | while read f; do
   # check each line of each found tex file for embedded images
   cat $f | while read l; do
     imageFilePath=`echo $l | grep -v '^\s*%' | grep 'includegraphics' | sed 's/.*{img/img/' | tr -d '}';`
@@ -49,9 +48,9 @@ cat $UNIQUE_IMAGELIST | while read iml; do
     if [ "$MDI" == 'true' ]; then echo "," >> $IMGMD; else echo "true" > $MDIFILE; fi;
     # store the path of the image file to the image meta descriptions 
     # for enabling the converter to embed it into the image reference list
-    echo "{ \"imPath\": \"$iml\"," >> $IMGMD;
+    echo "{ \"img_path\": \"$iml\"," >> $IMGMD;
     # create a corresponding meta section
-    echo "  \"imMeta\": " >> $IMGMD;
+    echo "  \"img_meta_data\": " >> $IMGMD;
     # copy the content into the image meta descriptions
     cat $tfx >> $IMGMD;
     # close this section
@@ -63,6 +62,7 @@ done
 echo "]" >> $IMGMD;
 
 # (4) delete all temporarily created files
-rm *.tmp
+# normally done by the makefile
+# rm *.tmp
 
 exit 0

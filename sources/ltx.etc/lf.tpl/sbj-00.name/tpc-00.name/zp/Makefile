@@ -6,25 +6,30 @@
 #LATEX=latex
 LATEX=pdflatex
 
-AUX_EXTS=url bbl blg aux dvi toc log lof nlo nls ilg ils ent out log bcf xml nav snm vrb
-RES_EXTS=ps pdf
+AUX_EXTS=url bbl blg aux dvi toc log lof nlo nls ilg ils ent out log bcf xml nav snm vrb json tmp
+RES_EXTS=ps pdf 
 
-SUBDIRS=snippets tools
-
-default:  clean lf09-praese.pdf
+TFL=texfiles.tmp
 
 help:
 	echo "make | make YOURFILE.pdf"
 
+texFiles:
+	@ if [ -f ${TFL} ]; then rm ${TFL}; fi
+	@ ls *.tex | grep -v inc-image-list.tex | while read f; do echo $$f; echo $$f >> ${TFL}; done
+	
 .SUFFIXES: .tex .dvi .ps .pdf .rtf
 
 .tex.pdf:
 	@ echo "### `date +'%Y%m%dT%H%M%S'`"
-	@ echo "### converting $< to $@"
+	@ echo "### (1) collecting relevant tex files"
+	@ make texFiles
+	@ echo "### (2) computing the image reference"
+	@ ../../../../bin/collect-img-meta-data.sh
+	@ python3 ../../../../bin/write-img-meta-data-list.py > inc-image-list.tex
+	@ echo "### (2) converting $< to $@"
 	@ $(LATEX) $<
-	#	no literature in zen presentations, hence no 
-	#	@ biber `basename $< .tex`
-	#	@ makeindex `basename $< .tex`.nlo -s cfg/nomencl.ist -o `basename $< .tex`.nls
+	@ biber `basename $< .tex`
 	@ $(LATEX) $<
 	@ $(LATEX) $<
 ifneq ($(LATEX),pdflatex)
@@ -33,8 +38,7 @@ ifneq ($(LATEX),pdflatex)
 	@ echo "### converting PostScript to PDF"
 	@ ps2pdf $<
 endif
-	# @ mv $@ `basename $@ .pdf`-`cat cfg/inc.rel.tex`.pdf
-	@ make clearAuxFiles
+	@ make clear
 
 .tex.dvi:
 	@ echo "### `date +'%Y%m%dT%H%M%S'`"
@@ -50,16 +54,12 @@ endif
 	@ echo "### converting $< to $@"
 	@ dvips $<
 
-clearAuxFiles:
+
+clear:
 	$(foreach EXT, ${AUX_EXTS}, if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; fi;)
 
-clear:	clearAuxFiles
-
-clean:	clearAuxFiles
+clean:	clear
 	$(foreach EXT, ${RES_EXTS}, if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; fi;)
+	@ if [ -f ./inc-image-list.tex ]; then rm ./inc-image-list.tex; fi 
+	
 
-dclear: clear
-	$(foreach DIR, ${SUB_DIRS}, cd ${DIR} && make clear && cd ..;)
-
-dclean: clean
-	$(foreach DIR, ${SUB_DIRS}, cd ${DIR} && make clean && cd ..;)

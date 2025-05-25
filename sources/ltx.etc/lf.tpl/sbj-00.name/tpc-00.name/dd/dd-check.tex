@@ -13,7 +13,8 @@
   toc=bib,
   english,ngerman]{scrartcl}
 
-%%% (1) general configurations %%%
+% customize your presentation
+% ---------------------------
 % set paths:
 
 \def\imgGl{../../../../img.gl/}
@@ -40,10 +41,7 @@
 \usepackage{microtype}
 
 %language specific quoting signs
-\usepackage[
-  style=german,
-  autostyle=true,
-]{csquotes}
+\usepackage[style=german,autostyle=true,]{csquotes}
 
 % language specific hyphenation
 \input{\cfgGl/inc.babelhyphenations.tex}
@@ -85,6 +83,7 @@
 \usepackage[dvipsnames]{xcolor}
 
 \begin{document}
+\selectlanguage{ngerman}
 
 %% use all entries of the bliography
 \nocite{*}
@@ -98,11 +97,11 @@
 
 \maketitle
 
-
-\section{Thema}
-
 \input{inc-dd-topic-00.tex}
 
+Und hier ein Fußnotentest\footcite[vgl.][17]{RlpIt2019a}
+
+\printbibliography
 \input{\bibGl/ncl.abbrevs-de.tex}
 \input{\bibGl/ncl.journals.tex}
 \printnomenclature
