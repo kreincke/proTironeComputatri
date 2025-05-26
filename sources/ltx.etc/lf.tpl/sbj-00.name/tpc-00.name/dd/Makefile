@@ -6,23 +6,30 @@
 #LATEX=latex
 LATEX=pdflatex
 
-AUX_EXTS=url bbl blg aux dvi toc log lof nlo nls ilg ils ent out log bcf xml nav snm vrb
-RES_EXTS=ps pdf
+AUX_EXTS=url bbl blg aux dvi toc log lof nlo nls ilg ils ent out log bcf xml nav snm vrb json tmp
+RES_EXTS=ps pdf 
 
-SUBDIRS=""
+TFL=texfiles.tmp
 
 CFGP='../../../../cfg.gl/'
-
-default:  clean lf09-praese.pdf
 
 help:
 	echo "make | make YOURFILE.pdf"
 
+texFiles:
+	@ if [ -f ${TFL} ]; then rm ${TFL}; fi
+	@ ls *.tex | grep -v inc-image-list.tex | while read f; do echo $$f; echo $$f >> ${TFL}; done
+	
 .SUFFIXES: .tex .dvi .ps .pdf .rtf
 
 .tex.pdf:
 	@ echo "### `date +'%Y%m%dT%H%M%S'`"
-	@ echo "### converting $< to $@"
+	@ echo "### (1) collecting relevant tex files"
+	@ make texFiles
+	@ echo "### (2) computing the image reference"
+	@ ../../../../bin/collect-img-meta-data.sh
+	@ python3 ../../../../bin/write-img-meta-data-list.py > inc-image-list.tex
+	@ echo "### (3) converting $< to $@"
 	@ $(LATEX) $<
 	@ biber `basename $< .tex`
 	@ makeindex `basename $< .tex`.nlo -s ${CFGP}/nomencl.ist -o `basename $< .tex`.nls
@@ -35,7 +42,7 @@ ifneq ($(LATEX),pdflatex)
 	@ ps2pdf $<
 endif
 	# @ mv $@ `basename $@ .pdf`-`cat cfg/inc.rel.tex`.pdf
-	@ make clearAuxFiles
+	@ make clear
 
 .tex.dvi:
 	@ echo "### `date +'%Y%m%dT%H%M%S'`"
@@ -51,16 +58,11 @@ endif
 	@ echo "### converting $< to $@"
 	@ dvips $<
 
-clearAuxFiles:
+clear:
 	$(foreach EXT, ${AUX_EXTS}, if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; fi;)
 
-clear:	clearAuxFiles
 
-clean:	clearAuxFiles
+clean:	clear
 	$(foreach EXT, ${RES_EXTS}, if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; fi;)
+	@ if [ -f ./inc-image-list.tex ]; then rm ./inc-image-list.tex; fi 
 
-dclear: clear
-	$(foreach DIR, ${SUB_DIRS}, cd ${DIR} && make clear && cd ..;)
-
-dclean: clean
-	$(foreach DIR, ${SUB_DIRS}, cd ${DIR} && make clean && cd ..;)
