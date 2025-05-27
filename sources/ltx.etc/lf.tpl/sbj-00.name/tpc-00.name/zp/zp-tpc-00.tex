@@ -71,17 +71,33 @@
 \date{\today}
 
 \begin{document}
-\nocite{*}
+% in a presentation normally it should not benecessary 
+% to include the complete bibliography
+%\nocite{*} 
 \selectlanguage{ngerman}
 
 \begin{frame}
   \titlepage
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% add the other topic snippets here
 \input{inc-topic-00}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% be careful to modify the closing commands
+
+% 1. Insert the legally necessary closure sheet
+% that should be the same for each
+% proTironeComputatri presentation
+\input{\cfgGl/inc.cls-zp}
+
+% 2. hide the logo
 \logo{}
 \newpage
+
+% 3. insert the image credit list
 \section{Bildnachweise}
 \noindent\rule{\linewidth}{0.4pt}
 
@@ -92,6 +108,7 @@
  \input{./inc-image-list}
 \end{tiny}
 
+% 4. insert the liteature hints 
 \newpage
 \section{Literaturliste}
 \noindent\rule{\linewidth}{0.4pt}
@@ -100,6 +117,5 @@
 
 \vspace{0.22cm}
 \printbibliography
-
 
 \end{document}
