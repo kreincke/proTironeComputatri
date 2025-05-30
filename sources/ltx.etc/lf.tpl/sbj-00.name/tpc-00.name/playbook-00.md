@@ -6,7 +6,7 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
-Laufzettel für Subject 00 / Topic 00 
+#### 00.00 Thema / Aspekt (Laufzettel) 
 
 * Präse zeigen
 * Inhalt dazu erzählen

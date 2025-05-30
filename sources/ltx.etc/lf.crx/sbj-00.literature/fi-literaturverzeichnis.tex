@@ -1,0 +1,136 @@
+% This file is part of the Open Source project 'proTironeComputatri'
+% (c) 2025 Karsten Reincke (https://github.com/kreincke/proTironeComputatri)
+% It is distributed under the terms of the creative commons license
+% CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
+
+\documentclass[
+  DIV=calc,
+  BCOR=5mm,
+  11pt,
+  headings=small,
+  oneside,
+  abstract=true,
+  toc=bib,
+  english,ngerman]{scrartcl}
+
+% customize your presentation
+% ---------------------------
+% set paths:
+
+\def\imgGl{../../img.gl/}
+\def\bibGl{../../bib.gl}
+\def\cfgGl{../../cfg.gl/}
+
+\usepackage[utf8]{inputenc}
+\usepackage{a4}
+\usepackage[english,ngerman]{babel}
+
+\usepackage[
+  backend=biber,
+  style=authortitle-dw,
+  sortlocale=auto,
+]{biblatex}
+\input{\cfgGl/inc.cfg-biber-de.tex}
+
+\addbibresource{\bibGl/lit.fachinformatik.bib}
+
+% package for improving the grey value and the line feed handling
+\usepackage{microtype}
+
+%language specific quoting signs
+\usepackage[style=german,autostyle=true,]{csquotes}
+
+% language specific hyphenation
+\input{\cfgGl/inc.babelhyphenations.tex}
+
+%%% (3) layout page configuration %%%
+
+% select the visible parts of a page
+% S.31: { plain|empty|headings|myheadings }
+\pagestyle{headings}
+% select the wished style of page-numbering
+% S.32: { arabic,roman,Roman,alph,Alph }
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+% select the wished distances using the general setlength order:
+% S.34 { baselineskip| parskip | parindent }
+% - general no indent for paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.2ex plus 0.2ex minus 0.2ex}
+
+
+%- start(footnote-configuration)
+
+\deffootnote[1.5em]{1.5em}{1.5em}{\textsuperscript{\thefootnotemark)\ }}
+
+%for using label as nameref
+\usepackage{nameref}
+
+%integrate nomenclature
+\input{\cfgGl/inc.cfg-ncl-de.tex}
+
+% Hyperlinks
+\usepackage{hyperref}
+\hypersetup{bookmarks=true,breaklinks=true,colorlinks=true,citecolor=blue,draft=false}
+
+\usepackage{multirow,tabularx}
+\usepackage{fontawesome}
+\usepackage{rotating}
+\usepackage[dvipsnames]{xcolor}
+
+\begin{document}
+\selectlanguage{ngerman}
+
+%% use all entries of the bliography
+\nocite{*}
+
+\titlehead{Ausbildung zur Fachinformatikerin}
+\subject{Release \input{\cfgGl/inc.rel.tex}}
+\title{Crossover Literaturverzeichnis}
+
+\subtitle{gruppiert nach Lernfeldern}
+\author{Karsten Reincke\input{\cfgGl/inc.lfn-dd.tex}}
+
+\maketitle
+
+(Hauptsächlich) nach Lernfeldern gruppiert, listen wir hier Lehr- und Lernbücher auf, die - mehr oder minder absichtlich - den Stoff für die Ausbildung zur Fachinformatikerin aufbereiten:
+
+\printbibliography[keyword={ORGA}, title={Duale Ausbildung und Formalitäten}]
+\printbibliography[keyword={LF01}, title={Lernfeld 01: Das Unternehmen und die eigenene Rolle im Betrieb}]
+\printbibliography[keyword={LF02}, title={Lernfeld 02: Arbeitsplätze einrichten}]
+\printbibliography[keyword={LF03}, title={Lernfeld 03: Netzwerkclients einbinden}]
+\printbibliography[keyword={LF04}, title={Lernfeld 04: Schutzbedarf analysieren}]
+\printbibliography[keyword={LF05}, title={Lernfeld 05: Software anpassen }]
+\printbibliography[keyword={LF06}, title={Lernfeld 06: Serviceanfragen bearbeiten}]
+\printbibliography[keyword={LF07}, title={Lernfeld 07: Cyber-physische Systeme ergänzen}]
+\printbibliography[keyword={LF08}, title={Lernfeld 08: Daten systenübergreifend bereitstellen}]
+\printbibliography[keyword={LF09}, title={Lernfeld 09: Netzwerke und Dienste bereitstellen}]
+\printbibliography[keyword={LF10a}, title={Lernfeld 10a: Benutzerschnittstellen gestalten}]
+\printbibliography[keyword={LF11a}, title={Lernfeld 11a: Funktionalität in Anwendungen realisieren}]
+\printbibliography[keyword={LF12a}, title={Lernfeld 12a: Anwendungen kundenspezifisch entwickln}]
+\printbibliography[keyword={LF10b}, title={Lernfeld 10b: Serverdienste bereitstellen und Administration automatisieren}]
+\printbibliography[keyword={LF11b}, title={Lernfeld 11b: Betrieb und Sicherheit vernetzter Systeme gewährleisten}]
+\printbibliography[keyword={LF12b}, title={Lernfeld 12b: Systeme kundenspezifisch integrieren}]
+\printbibliography[keyword={LF10c}, title={Lernfeld 10c: Werkzeuge maschinellen Lernens einsetzen}]
+\printbibliography[keyword={LF11c}, title={Lernfeld 11c: Prozesse analysieren und gestalten}]
+\printbibliography[keyword={LF12c}, title={Lernfeld 12c: Prozesse und Daten kundenspezifisch analysieren}]
+\printbibliography[keyword={LF10d}, title={Lernfeld 10d: Cyber-physische Systeme entwickeln}]
+\printbibliography[keyword={LF11d}, title={Lernfeld 11d: Betrieb und Sicherheit vernetzter Systeme gewährleisten}]
+\printbibliography[keyword={LF12d}, title={Lernfeld 12d: Cyber-physische Systeme kundenspezifisch optimieren}]
+\printbibliography[keyword={SLBM}, title={Zeit- und Selbstmanagement}]
+\printbibliography[notkeyword={ORGA}, 
+  notkeyword={LF01},  notkeyword={LF02}, notkeyword={LF03},  notkeyword={LF04}, notkeyword={LF05},
+  notkeyword={LF06},  notkeyword={LF07},  notkeyword={LF08},  notkeyword={LF09},  
+  notkeyword={LF10a}, notkeyword={LF11a}, notkeyword={LF12a},
+  notkeyword={LF10b}, notkeyword={LF11b}, notkeyword={LF12b},
+  notkeyword={LF10c}, notkeyword={LF11c}, notkeyword={LF12c},
+  notkeyword={LF10d}, notkeyword={LF11d}, notkeyword={LF12d},
+notkeyword={SLBM}, title={Sonstiges}]
+
+
+\input{\bibGl/ncl.abbrevs-de.tex}
+\input{\bibGl/ncl.journals.tex}
+\printnomenclature
+
+\end{document}

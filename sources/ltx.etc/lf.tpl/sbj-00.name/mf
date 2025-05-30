@@ -1,0 +1,12 @@
+playbooks: 
+  @ echo "collecting playbooks"
+  @ mkdir -p ${RESULTS}
+  @ if [ -f ${INCOLL} ]; then rm ${INCOLL}; fi
+  @ find . -type d -name tpc* | while read d; do\
+    find $${d} -type f -name "playbook*.md" | while read f; do\
+      cat $${f} >> ${INCOLL};\
+      echo "adopting content of $$f";\
+    done;\
+  done;
+  @ pandoc header.${PLBO} ${INCOLL} -o collected-${PLBO} --from markdown --template ${EVD}/eisvogel.latex --listings -V lang=de-DE
+  @ mv collected-${PLBO} ${RESULTS}

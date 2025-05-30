@@ -4,9 +4,9 @@
 # It is distributed under the terms of the creative commons license
 # CC-BY-4.0 (= https://creativecommons.org/licenses/by/4.0/)
 
-BD="../download"
+BD="../../lessons"
 
-# for each LERNFELD and each of its subjects create a dist directory:
-# any subject directory will contain the topic specific files
+# for each LERNFELD and each of its subjects create a download directory:
+# any such subject directory will contain its topic specific files
 find lf* -maxdepth 1 -type d | grep sbj | while read d; do echo $d; mkdir -p $BD/$d; done
 

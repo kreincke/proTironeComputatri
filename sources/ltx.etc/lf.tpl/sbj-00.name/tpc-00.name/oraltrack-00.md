@@ -6,12 +6,12 @@
 -->
 <!-- LTeX:Language=de-DE -->
 
-# Subject 00 / Topic 00 
+#### 00.00 Thema / Aspekt (Oraltrack) 
 
-## 1.)
+##### 00.00.A 
 
 * IS1
 * IS2
 
-## 2.) 
+##### 00.00.B
 

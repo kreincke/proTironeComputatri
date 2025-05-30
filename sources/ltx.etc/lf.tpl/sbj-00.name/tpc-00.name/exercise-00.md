@@ -7,7 +7,8 @@
 
 <!-- LTeX:Language=de-DE -->
 
-### Aufgabentitel
-#### Aufgabenbeschreibung
-#### Materialerzeugung
-#### Lösung
+#### 00.00 Thema/Aspekt (Übung)
+
+##### Beschreibung
+##### Material 
+##### Lösung
