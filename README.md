@@ -25,7 +25,7 @@
 
 <!-- LTeX:Language=de-DE -->
 
-## Manifest
+### Manifest
 
 Das GitHub-Repository *proTironeComputatri* stellt **_freie_ Lehr- und Lernmaterialien für die Ausbildung zur Fachinformatikerin**[^1] bereit. Es enthält Creative-Commons-lizenzierte Dokumente oder Open-Source-Software, die
 
@@ -40,7 +40,7 @@ Wir wissen, dass so ein Ziel nur kooperativ zu erreichen ist. In kleinen Schritt
 
 Seien Sie als Contributorin herzlich willkommen! Wir freuen uns auf jeden Pullrequest!!
 
-## Lizenz
+### Lizenz
 
 Sofern im Einzelfall nicht anders vermerkt, stehen alle Dokumente mit Lehrinhalt unter der [CC-BY-4.0-Lizenz](https://creativecommons.org/licenses/by/4.0/deed.de) und alle Dateien, die die Erzeugung von PDFs organisieren, unter der [MIT-Lizenz](https://github.com/kreincke/proTironeComputatri/blob/main/LICENSE.mit.md)
 
@@ -48,7 +48,7 @@ Ausgenommen von dieser Regel ist das [proTirone-Logo](https://github.com/kreinck
 
 Näheres regelt unsere [Lizenzenzierungsdatei](https://github.com/kreincke/proTironeComputatri/blob/main/LICENSING.md) 
 
-## Struktur
+### Struktur
 
 Das Repository enthält 3 Quellen:
 
@@ -60,11 +60,11 @@ Das Repository enthält 3 Quellen:
 
 Die Nummern der Lernfelder folgen dem Rahmenlehrplan. Mehrere Themen (`sbj-`\*) decken ein Lernfeld ab. Jedes Thema umfasst i.d.R mehrere Aspekte (`tpc-`\*). Jeder Aspekt soll(te) in 1-2 Doppelstunden vermittelt werden können.
 
-### Einzelheiten zu **sources/doc.etc** basierten PDFs
+#### Einzelheiten zu **sources/doc.etc** basierten PDFs
 
 TBC.
 
-### Einzelheiten zu **sources/ltx.etc** basierten PDFs
+#### Einzelheiten zu **sources/ltx.etc** basierten PDFs
 
 * Jeder Aspektordner (`tpc-*`)
   * skizziert in seinem Namen, worum es geht
@@ -78,7 +78,7 @@ TBC.
   * fasst die Präsentationen zu einem Aspekt zu einer thematischen [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) zusammen.
   * kann die Aspekt bezogenen Tonspurdateien zu einer übergreifenden thematischen Tonspur-Datei zusammenfassen.
 
-## Milestones
+### Milestones
 
 * [X] Bis Ende Mai 2025 Aufbau des Template- und Buildsystems
 * [ ] Bis Ende Juni 2025 Integration einer exemplarischen Unterrichtseinheit in Sachen Markdown
@@ -86,16 +86,16 @@ TBC.
 * [ ] Im Laufe des Schuljahrs 2025/2026 stückweise Integration von LF-11c- und LF-11d-Stunden
 * [ ] ...
 
-## Hintergrund
+### Hintergrund
 
 In Deutschland gibt es neben dem Studium der Informatik die Ausbildung zur Fachinformatikerin.[^1] Ersteres schließt mit dem Bachelor oder Master ab, letztere mit dem Gesellenbrief. Denn die Ausbildung zur Fachinformatikerin ist Teil des deutschen dualen Ausbildungssystems: die 'Azubis' - die *Tirones* - werden im Betrieb und in der Berufsschule ausgebildet. Und für die Ausbildung in der Berufsschule braucht es - neben Lehrerinnen und einem Rahmenlehrplan - ein Curriculum und entsprechende Lehrmaterialien.
 
 Wäre es nicht schön, wenn die zukünftigen Informatikerinnen gleich anhand von Open-Source-(Software) basierten Dokumenten ausgebildet würden?
 
-## FAQ
+### FAQ
 * **Warum nutzt Ihr einen lateinischen Projektnamen?** Wann immer wir nach *Fachinformatik* 'gegoogelt' haben, sind wir auf die universitäre Informatik gestoßen: Die Beudeutung von *Fachinformatik* und *Fach Informatik* liegen einfach eng beieinander. Auch die Wörter *Lehrling* oder *Lehrlingsausbildung* führen über *Lehre* und *Bildung* in den universitären Kontext. (Dass es dafür die Spezial(!)suche __"__Fachinformatik__"__ gibt, ist uns bekannt). Um unser Vorhaben explizit in den Kontext der deutschen Lehrlingsausbildung - das deutsche duale Ausbildungssystem - zu stellen und vom universitären Anspruch abzugrenzen, haben wir uns für den lateinischen Neologismus [computatrum = Rechenmaschine/Computer](https://www.latin-is-simple.com/de/vocabulary/noun/6131/) und das Wort [tiro = Lehrling](https://de.pons.com/übersetzung-2/latein-deutsch/tiro) entschieden. Weil letzteres in der Verbindung mit der Präposition *pro* im Ablativ genutzt wird, entstand **proTirone computatrum**: *für den Lehrling der Fachinformatik*. Und das beschreibt den Zweck dieses Projektes und Repositories recht gut.
 
-## Open Issues
+### Open Issues
 
 * [X] TODO: erläutere, warum der lateinische Name? [computatrum = Rechenmaschine/Computer](https://www.latin-is-simple.com/de/vocabulary/noun/6131/) + [tiro = Lehrling](https://de.pons.com/übersetzung-2/latein-deutsch/tiro) + [pro needs ablativ 'tirone'](https://de.wikibooks.org/wiki/Latein/_Grammatik/_Satzlehre/_Präpositionen/_Präpositionen_mit_Ablativ)
 * [X] TODO: erläutere Lizenzierung und Lizenzerfüllung genauer
