@@ -10,16 +10,11 @@
 
 ## Licensing Statement
 
-As long as not explicitly modified for a specific item
-
-* All content files - may they be LaTeX files, markdown files, diagrams, or any other files - are licensed under the Creative Commons License **CC BY 4.0**: 
+As long as not explicitly modified for a specific item, all files - may they be LaTeX files, markdown files, diagrams, makefiles, pictures or programming examples - are licensed under the Creative Commons License **CC BY 4.0**: 
   * Canonical URL: [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
   * German Version: [https://creativecommons.org/licenses/by/4.0/deed.de](https://creativecommons.org/licenses/by/4.0/deed.de)
-* All computing files - may they be Make files, programming examples, or any other files - are licensed under the MIT license
 
-There are two exempts from this rule:
-* The [proTirone logo](https://github.com/kreincke/proTironeComputatri/blob/main/logo.png) may only be used to visually identify the project [proTirone Computatri](https://github.com/kreincke/proTironeComputatri/), either in the given form or as 'gray-scaled image'.
-* The framework to generate deep dives, zen presentations, and bibliographies is completely licensed under [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
+There is one exception from this rule: The [proTirone logo](https://github.com/kreincke/proTironeComputatri/blob/main/logo.png) may only be used to visually identify the project [proTirone Computatri](https://github.com/kreincke/proTironeComputatri/), either in the given form or as 'gray-scaled image'.
 
 ## Fulfillment Rules
 
