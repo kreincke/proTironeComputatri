@@ -17,7 +17,7 @@
 </p>
 
 
-# Freie Lehr- & Lernmaterialien für die Ausbildung zur Fachinformatikerin
+# Freie Unterrichtsmaterialien für die Ausbildung zur Fachinformatikerin
 
 <!-- LTeX:Language=en-US -->
 
