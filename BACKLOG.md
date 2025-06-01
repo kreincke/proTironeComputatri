@@ -10,7 +10,7 @@
   * [ ] self-organization
   * [ ] installing and using `VSCode` (WIN) and `VSCodium` (LNX)
   * [ ] installing and using `drawio`
-  * [ ] using Markdown
+  * [ ] using `Markdown`
 * [x] Insert a BY-Page in each beamer sheet for fulfilling the CC-BY-SA requirements
 * [x] Normalize the input statements by using LaTeX variables for the paths
 * [x] Create and integrate a proTironeComputatri - Logo
