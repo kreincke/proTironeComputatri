@@ -13,13 +13,16 @@ LES_TD=${PTC_TD}/lessons
 EVD="../../../3ps/eisvogel"
 
 help:
-	@ echo "make [ help | lessons | all | newExLes | exercise | newOtLes | oraltrack | newPbLes | playbook | newZpLes | zenprese |  YOURFILE.pdf"
+	@ echo "make [ help | lesson | all | newExLes | exercise | newOtLes | oraltrack | newPbLes | playbook | newZpLes | zenprese |  YOURFILE.pdf"
+
+release: lesson 
+	@ PWD=`pwd | sed "s/^.*ltx.etc\///"` && echo having released $${PWD}
 
 all: exercise oraltrack playbook zenprese
 
 # recreates all tpc documents and releases them into the lesson directory tree
 # requires a manually evoked release of the corresponding sbj documents
-lessons: exercise oraltrack playbook zenprese
+lesson: exercise oraltrack playbook zenprese
 	@ ( cd ${LNX_TD} && ./bin/align-download-area.sh )
 	@ WD=`pwd | sed "s/^.*ltx.etc\///"` && mv *.pdf ${LES_TD}/$${WD}
 	@ tree ${LES_TD}
@@ -30,6 +33,7 @@ newExLes: exercise
 	@ ( cd ${LNX_TD} && ./bin/align-download-area.sh )
 	@ WD=`pwd | sed "s/^.*ltx.etc\///"` && mv exercise.pdf ${LES_TD}/$${WD}
 	@ tree ${LES_TD}
+	@ (cd .. && make newExLes)
 
 exercise:
 	make exercise.pdf
@@ -40,6 +44,7 @@ newOtLes: oraltrack
 	@ ( cd ${LNX_TD} && ./bin/align-download-area.sh )
 	@ WD=`pwd | sed "s/^.*ltx.etc\///"` && mv oraltrack.pdf ${LES_TD}/$${WD}
 	@ tree ${LES_TD}
+	@ (cd .. && make newOtLes)
 
 oraltrack:
 	make oraltrack.pdf
@@ -50,6 +55,7 @@ newPbLes: playbook
 	@ ( cd ${LNX_TD} && ./bin/align-download-area.sh )
 	@ WD=`pwd | sed "s/^.*ltx.etc\///"` && mv playbook.pdf ${LES_TD}/$${WD}
 	@ tree ${LES_TD}
+	@ (cd .. && make newPbLes)
 
 playbook:
 	make playbook.pdf
@@ -60,6 +66,7 @@ newZpLes: zenprese
 	@ ( cd ${LNX_TD} && ./bin/align-download-area.sh )
 	@ WD=`pwd | sed "s/^.*ltx.etc\///"` && mv zp.pdf ${LES_TD}/$${WD}
 	@ tree ${LES_TD}
+	@ (cd .. && make newZpLes)
 
 zenprese:
 	@ echo "writing zenprese"
