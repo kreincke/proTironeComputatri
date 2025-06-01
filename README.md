@@ -10,10 +10,10 @@
 <!-- LTeX:Language=de-DE -->
 
 <p align="center">
-  <a href="https://github.com/kreincke/proTironeComputatri/"><img src="logo.png" height="80"></a><br />
   <a href="https://github.com/kreincke/proTironeComputatri/commits/" title="Last Commit"><img src="https://img.shields.io/github/last-commit/kreincke/proScientia.ltx?style=flat"></a>
   <a href="https://github.com/kreincke/proTironeComputatri/issues" title="Open Issues"><img src="https://img.shields.io/github/issues/kreincke/proScientia.ltx?style=flat"></a>  
-  <a href="https://github.com/kreincke/proTironeComputatri/blob/master/LICENSING.md" title="License"><img src="https://img.shields.io/badge/License-CC_BY_4.0-blue.svg?style=flat"></a>
+  <a href="https://github.com/kreincke/proTironeComputatri/blob/master/LICENSING.md" title="License"><img src="https://img.shields.io/badge/License-CC_BY_4.0-blue.svg?style=flat"></a><br />
+  <a href="https://github.com/kreincke/proTironeComputatri/"><img src="logo.png" height="80"></a>
 </p>
 
 
