@@ -75,9 +75,9 @@ TBC.
   * fasst die Präsentationen zu einem Aspekt zu einer thematischen [ZEN-Präsentation](https://www.amazon.de/Zen-oder-die-Kunst-Präsentation/dp/3864907594) zusammen.
   * kann die Aspekt bezogenen Tonspurdateien zu einer übergreifenden thematischen Tonspur-Datei zusammenfassen.
 
-## Zeitlicher Ausblick
+## Milestones
 
-* [ ] Bis Ende Mai 2025 Aufbau des Template- und Buildsystems
+* [X] Bis Ende Mai 2025 Aufbau des Template- und Buildsystems
 * [ ] Bis Ende Juni 2025 Integration einer exemplarischen Unterrichtseinheit in Sachen Markdown
 * [ ] Bis Ende der Hessischen Sommerferien 2025 Integration eines Grundbestandes an LF09-Stunden
 * [ ] Im Laufe des Schuljahrs 2025/2026 stückweise Integration von LF-11c- und LF-11d-Stunden
@@ -97,10 +97,10 @@ Wäre es nicht schön, wenn die zukünftigen Informatikerinnen gleich anhand von
 * [X] TODO: erläutere, warum der lateinische Name? [computatrum = Rechenmaschine/Computer](https://www.latin-is-simple.com/de/vocabulary/noun/6131/) + [tiro = Lehrling](https://de.pons.com/übersetzung-2/latein-deutsch/tiro) + [pro needs ablativ 'tirone'](https://de.wikibooks.org/wiki/Latein/_Grammatik/_Satzlehre/_Präpositionen/_Präpositionen_mit_Ablativ)
 * [X] TODO: erläutere Lizenzierung und Lizenzerfüllung genauer
 * [ ] TODO: erläutere und ermögliche das Customizen der Dokumente
-* [ ] TODO erläutere und ermögliche einen build-Zweig ein
-* [ ] TODO erläutere das Generieren der LaTeX/beamer-Zen-Präsentationen
-* [ ] TODO erläutere das Generieren der LaTeX/komscript-Deepdive-Dokumente
-* [ ] TODO erläutere generisches Femininum
+* [ ] TODO: erläutere und ermögliche einen build-Zweig ein
+* [ ] TODO: erläutere das Generieren der LaTeX/beamer-Zen-Präsentationen
+* [ ] TODO: erläutere das Generieren der LaTeX/komscript-Deepdive-Dokumente
+* [ ] TODO: erläutere generisches Femininum
 
 Anmerkungen:
 

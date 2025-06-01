@@ -10,15 +10,23 @@ AUX_EXTS=url bbl blg aux dvi toc log lof nlo nls ilg ils ent out log bcf xml nav
 RES_EXTS=ps pdf
 RESULTS=results
 
+LNX_TD="../.."
+PTC_TD="../../${LNX_TD}"
+LES_TD=${PTC_TD}/lessons
+
 LVZ="fi-literaturverzeichnis"
 
 help:
-	echo "make [ lvz | YOURFILE.pdf | help]"
+	echo "make [ release | lesson | lvz | YOURFILE.pdf | help]"
+
+release: lesson 
+
+lesson: lvz
+	mv ${LVZ}.pdf ${LES_TD}
+	@ tree ${LES_TD}	
 
 lvz:
-	make ${LVZ}.pdf
-	@ mkdir -p ${RESULTS}
-	@ mv ${LVZ}.pdf ${RESULTS}
+	@ make ${LVZ}.pdf
 
 check:
 	@ echo "### `date +'%Y%m%dT%H%M%S'`"
@@ -63,6 +71,5 @@ clear:
 
 clean:	clear
 	$(foreach EXT, ${RES_EXTS}, if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; fi;)
-	@ if [ -d ${RESULTS} ]; then rm -rf ${RESULTS}; fi
 
 
