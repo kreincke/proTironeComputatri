@@ -12,6 +12,7 @@
 <div style="display: flex;justify-content: center">
 <a href="https://github.com/kreincke/proTironeComputatri/"><img src="logo.png" height="80"></a>
 </div>
+
 # Freie Unterrichtsmaterialien für die Ausbildung zur Fachinformatikerin
 
 <!-- LTeX:Language=en-US -->
