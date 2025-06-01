@@ -44,7 +44,9 @@ Seien Sie als Contributorin herzlich willkommen! Wir freuen uns auf jeden Pullre
 
 Sofern im Einzelfall nicht anders vermerkt, stehen alle Dokumente mit Lehrinhalt unter der [CC-BY-4.0-Lizenz](https://creativecommons.org/licenses/by/4.0/deed.de) und alle Dateien, die die Erzeugung von PDFs organisieren, unter der [MIT-Lizenz](https://github.com/kreincke/proTironeComputatri/blob/main/LICENSE.mit.md)
 
-Ausgenommen von dieser Regel ist das [proTirone-Logo](https://github.com/kreincke/proTironeComputatri/blob/main/logo.png): Es darf nur verwendet werden, um das Projekt [proTirone](https://github.com/kreincke/proTironeComputatri/) visuell zu markieren bzw. anzuteasern.
+Ausgenommen von dieser Regel sind
+* das [proTirone-Logo](https://github.com/kreincke/proTironeComputatri/blob/main/logo.png): Es darf nur verwendet werden, um das Projekt [proTirone](https://github.com/kreincke/proTironeComputatri/) visuell zu markieren bzw. anzuteasern.
+* das Framework, um Deepdives, Zenpresentationen und Literaturverzeichnisse zu generieren: Es steht ganzheitlich unter der [CC-BY-4.0-Lizenz]
 
 Näheres regelt unsere [Lizenzenzierungsdatei](https://github.com/kreincke/proTironeComputatri/blob/main/LICENSING.md) 
 
