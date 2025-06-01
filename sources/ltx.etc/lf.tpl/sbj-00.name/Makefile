@@ -13,10 +13,25 @@ EXER=exercises
 ORTR=oraltracks
 PLBO=playbooks
 
+LNX_TD="../../"
+PTC_TD="../../${LNX_TD}"
+LES_TD=${PTC_TD}/lessons
+
+
 EVD="../../3ps/eisvogel"
 
 help:
 	echo "make [ help | exercises | oraltracks | playbooks | zenprese | all ] "
+
+lessons:
+	@ ( cd ${LNX_TD} && ./bin/align-download-area.sh )
+	@find . -type d -name "tpc-*" | while read d; do \
+		echo "installing lesson files for $${d} to ${LES_TD}";\
+		(cd $${d} && make lessons) \
+		done
+	@ make all
+	@ ( WD=`pwd | sed "s/^.*ltx.etc\///"` && mv results/*.pdf ${LES_TD}/$${WD} )
+	@ tree ${LES_TD}
 
 all: exercises oraltracks playbooks zenprese	
 
@@ -66,8 +81,8 @@ playbooks:
 zenprese:
 	echo "writing zenprese"
 	@ mkdir -p ${RESULTS}
-	@ (cd zp && BN=`ls zp*` && CN=`echo $${BN%\.*}`\
-		&& make $${CN}.pdf && mv $${CN}.pdf ../${RESULTS})
+	@ (cd zp && make clean && BN=`ls zp*` && CN=`echo $${BN%\.*}`\
+		&& make $${CN}.pdf && mv $${CN}.pdf ../${RESULTS}/collected-zps.pdf)
 
 .SUFFIXES: .md .pdf 
 

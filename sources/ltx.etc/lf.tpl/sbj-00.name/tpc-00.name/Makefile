@@ -5,45 +5,65 @@
 
 AUX_EXTS=tmp
 RES_EXTS=pdf
-RESULTS=results
 
-default: clean
-
-DEPFILE=playbook.pdf
+LNX_TD="../../.."
+PTC_TD="../../${LNX_TD}"
+LES_TD=${PTC_TD}/lessons
 
 EVD="../../../3ps/eisvogel"
 
 help:
-	echo "make [ help | exercise | oraltrack | playbook | deepdive | zenprese | all |  YOURFILE.pdf"
+	@ echo "make [ help | lessons | all | newExLes | exercise | newOtLes | oraltrack | newPbLes | playbook | newZpLes | zenprese |  YOURFILE.pdf"
 
 all: exercise oraltrack playbook zenprese
 
-exercise: 
-	echo "writing exercises"
-	@ mkdir -p ${RESULTS}
-	@ FN=`ls exercise*.md` && BN=`basename $${FN}`\
-		&& CN=`echo $${BN%\.*}` && make $${CN}.pdf \
-		&& mv $${CN}.pdf ${RESULTS}
+# recreates all tpc documents and releases them into the lesson directory tree
+# requires a manually evoked release of the corresponding sbj documents
+lessons: exercise oraltrack playbook zenprese
+	@ ( cd ${LNX_TD} && ./bin/align-download-area.sh )
+	@ WD=`pwd | sed "s/^.*ltx.etc\///"` && mv *.pdf ${LES_TD}/$${WD}
+	@ tree ${LES_TD}
+
+# recreates the tpc execise document, releases it into the lesson directory tree
+# AND recreates & releases the exercise collection in the corresponding sbj dir
+newExLes: exercise
+	@ ( cd ${LNX_TD} && ./bin/align-download-area.sh )
+	@ WD=`pwd | sed "s/^.*ltx.etc\///"` && mv exercise.pdf ${LES_TD}/$${WD}
+	@ tree ${LES_TD}
+
+exercise:
+	make exercise.pdf
+
+# recreates the tpc oraltrack document, releases it into the lesson directory tree
+# AND recreates & releases the oraltrack collection in the corresponding sbj dir
+newOtLes: oraltrack
+	@ ( cd ${LNX_TD} && ./bin/align-download-area.sh )
+	@ WD=`pwd | sed "s/^.*ltx.etc\///"` && mv oraltrack.pdf ${LES_TD}/$${WD}
+	@ tree ${LES_TD}
 
 oraltrack:
-	echo "writing oraltrack"
-	@ mkdir -p ${RESULTS}
-	@ FN=`ls oraltrack*.md` && BN=`basename $${FN}`\
-		&& CN=`echo $${BN%\.*}` && make $${CN}.pdf \
-		&& mv $${CN}.pdf ${RESULTS}
+	make oraltrack.pdf
 
-playbook: 
-	echo "writing playbook"
-	@ mkdir -p ${RESULTS}
-	@ FN=`ls playbook*.md` && BN=`basename $${FN}`\
-		&& CN=`echo $${BN%\.*}` && make $${CN}.pdf \
-		&& mv $${CN}.pdf ${RESULTS}
+# recreates the tpc playbook document, releases it into the lesson directory tree
+# AND recreates & releases the playbook collection in the corresponding sbj dir
+newPbLes: playbook
+	@ ( cd ${LNX_TD} && ./bin/align-download-area.sh )
+	@ WD=`pwd | sed "s/^.*ltx.etc\///"` && mv playbook.pdf ${LES_TD}/$${WD}
+	@ tree ${LES_TD}
+
+playbook:
+	make playbook.pdf
+
+# recreates the tpc zp document, releases it into the lesson directory tree
+# AND recreates & releases the zp collection in the corresponding sbj dir
+newZpLes: zenprese
+	@ ( cd ${LNX_TD} && ./bin/align-download-area.sh )
+	@ WD=`pwd | sed "s/^.*ltx.etc\///"` && mv zp.pdf ${LES_TD}/$${WD}
+	@ tree ${LES_TD}
 
 zenprese:
-	echo "writing zenprese"
-	@ mkdir -p ${RESULTS}
-	@ (cd zp && BN=`ls zp-tpc*` && CN=`echo $${BN%\.*}`\
-		&& make $${CN}.pdf && mv $${CN}.pdf ../${RESULTS})
+	@ echo "writing zenprese"
+	@ (cd zp && make zp.pdf && mv zp.pdf ../)
 
 .SUFFIXES: .md .pdf 
 
@@ -58,5 +78,4 @@ clear:
 
 clean:	clear
 	$(foreach EXT, ${RES_EXTS}, @if [ ! "x`ls *.${EXT} 2>/dev/null`" = "x" ]; then rm *.${EXT}; echo "removing existing .${EXT}-target-files"; fi;)
-	if [ -d ${RESULTS} ]; then rm -rf ${RESULTS}; fi
 

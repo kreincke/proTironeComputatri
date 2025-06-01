@@ -8,5 +8,6 @@ BD="../../lessons"
 
 # for each LERNFELD and each of its subjects create a download directory:
 # any such subject directory will contain its topic specific files
-find lf* -maxdepth 1 -type d | grep sbj | while read d; do echo $d; mkdir -p $BD/$d; done
+find lf* -maxdepth 1 -type d | grep sbj | while read d; do echo "creating sbj lesson dir: $d"; mkdir -p $BD/$d; done
+find lf* -maxdepth 2 -type d | grep tpc | while read d; do echo "creating tpc lesson dir: $d"; mkdir -p $BD/$d; done
 
