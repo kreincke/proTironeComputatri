@@ -31,10 +31,10 @@ Das Projekt *proTironeComputatri* stellt **_freie_ Lehr- und Lernmaterialien fü
 
 * die die Vorgaben des Rahmenlehrplans und der Prüfungskataloge erfüllen,
 * die sich an der Ordnung der Lernfelder ausrichten,
-* die Reihen fertig nutzbarer Unterrichts- und Lernmaterialien bilden,
+* die fertig nutzbare Lehr- und Lernmaterialien sind,
 * die alle Themen und Aspekte eines Lernfeldes abdecken.  
 
-Wir möchten, dass Lehrerinnnen hier - für jeden Aspekt der Ausbildung zur Fachinformatikerin - fertig aufbereitete Unterrichtsmaterialien finden, die sie gebührenfrei und ohne urheberrechtliche Bedenken verwenden dürfen. Dass Schülerinnen darauf vertrauen können, dass ihnen dieses Repository den von den Abschlussprüfungen I und II erwarteten Stoff umfänglich und hochwertig aufbereitet.
+Wir möchten, dass Lehrerinnnen und Schülerinnen hier - für jeden Aspekt der Ausbildung zur Fachinformatikerin - fertig aufbereitete Unterrichts- und Lerneinheiten finden. Dass das Repository den von den Abschlussprüfungen I und II erwarteten Stoff umfänglich und hochwertig aufbereitet. Und das beide diese gebührenfrei und ohne urheberrechtliche Bedenken verwenden können.
 
 Wir wissen, dass so ein Ziel nur kooperativ zu erreichen ist. In kleinen Schritten. Deshalb stellen wir die PDF-Dateien und ihre Quellen in einem GitHub-Repository bereit, unter den Bedingungen der *CC-BY-4.0*-Lizenz. Beides zusammen, die GitHub-Methodik und die Lizenzierung, erlaubt es uns, mit Techniken der Open-Source-Softwareentwicklung wirklich freie Unterrichtsmaterialien für die Ausbildung von Fachinformatikerinnen zu entwickeln. Und zwar gemeinsam. Als Community.
 
