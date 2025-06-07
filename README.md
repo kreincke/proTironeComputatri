@@ -30,7 +30,7 @@
 Das Projekt *proTironeComputatri* stellt **_freie_ Lehr- und Lernmaterialien für die Ausbildung zur Fachinformatikerin**[^1] bereit. In einem GitHub-Repository. Mit Creative-Commons-lizenzierten Dokumenten und Skripten, die
 
 * die die Vorgaben des Rahmenlehrplans und der Prüfungskataloge erfüllen,
-* die sich an der Ordnung der Lernfelder ausrichten,
+* die sich an die Aufteilung der Lernfelder halten,
 * die fertig nutzbare Lehr- und Lernmaterialien sind,
 * die alle Themen und Aspekte eines Lernfeldes abdecken.  
 
